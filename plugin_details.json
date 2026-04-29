@@ -2675,7 +2675,7 @@
     "manifest": {
       "manifest_version": 1,
       "name": "Gemini 绘图",
-      "version": "1.9.6",
+      "version": "1.9.7",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
         "name": "sakura桜花",
@@ -6579,7 +6579,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID ��表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列��。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
