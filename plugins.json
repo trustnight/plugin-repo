@@ -574,5 +574,9 @@
   {
     "id": "custom_knowledge_base_plugin",
     "repositoryUrl": "https://github.com/hmr-BH/custom_knowledge_base_plugin"
+  },
+  {
+    "id": "sengokucola.self-identity-plugin",
+    "repositoryUrl": "https://github.com/SengokuCola/self_identity_plugin"
   }
 ]
