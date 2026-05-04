@@ -582,5 +582,9 @@
   {
     "id": "NothingButSeaweedSoup.lonely-mai",
     "repositoryUrl": "https://github.com/NothingButSeaweedSoup/lonely-mai"
+  },
+  {
+    "id": "yuebaiqingfeng.MinecraftServerStatus",
+    "repositoryUrl": "https://github.com/yuebaiqingfeng/MinecraftServerStatus"
   }
 ]
