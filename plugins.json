@@ -590,5 +590,9 @@
   {
     "id": "sarkozyfan.maibot_plugin_endfield",
     "repositoryUrl": "https://github.com/sarkozyfan/maibot_plugin_endfield"
+  },
+  {
+    "id": "SengokuCola.maimai-birdwatching-plugin",
+    "repositoryUrl": "https://github.com/SengokuCola/maimai_birdwatching_plugin"
   }
 ]
