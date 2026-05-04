@@ -14,7 +14,7 @@
       "urls": {
         "repository": "https://github.com/SengokuCola/MutePlugin",
         "homepage": "https://github.com/SengokuCola/MutePlugin",
-        "documentation": "https://github.com/Mai-with-u/maibot-plugin-sdk/blob/main/docs/guide.md",
+        "documentation": "https://github.com/SengokuCola/MutePlugin/blob/main/README.md",
         "issues": "https://github.com/SengokuCola/MutePlugin/issues"
       },
       "host_application": {
@@ -3154,7 +3154,7 @@
               "/setu - 获取1张随机图片",
               "/setu help - 显示帮助信息",
               "/setu 3 - 获取3张图片",
-              "/setu #萝莉 - 搜索萝莉标签",
+              "/setu #萝莉 - 搜��萝莉标签",
               "/setu 原神 - 搜索原神关键词",
               "/setu #白丝,黑丝 - OR搜索",
               "/setu 5 #风景 横图 - 组合筛选"
@@ -8213,6 +8213,48 @@
         ]
       },
       "id": "maibot.knowledge_base_plugin"
+    }
+  },
+  {
+    "id": "sengokucola.self-identity-plugin",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "自我信息插件 (Self Identity Plugin)",
+      "description": "为 Bot 提供基于人设图片的自我识别与自我信息检索能力",
+      "author": {
+        "name": "SengokuCola",
+        "url": "https://github.com/SengokuCola"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/SengokuCola/self_identity_plugin",
+        "homepage": "https://github.com/SengokuCola/self_identity_plugin",
+        "documentation": "https://github.com/Mai-with-u/maibot-plugin-sdk/blob/main/docs/guide.md",
+        "issues": "https://github.com/SengokuCola/self_identity_plugin/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "llm.generate",
+        "llm.get_available_models",
+        "message.get_by_id"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "sengokucola.self-identity-plugin"
     }
   }
 ]
