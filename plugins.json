@@ -578,5 +578,9 @@
   {
     "id": "sengokucola.self-identity-plugin",
     "repositoryUrl": "https://github.com/SengokuCola/self_identity_plugin"
+  },
+  {
+    "id": "NothingButSeaweedSoup.lonely-mai",
+    "repositoryUrl": "https://github.com/NothingButSeaweedSoup/lonely-mai"
   }
 ]
