@@ -586,5 +586,9 @@
   {
     "id": "yuebaiqingfeng.MinecraftServerStatus",
     "repositoryUrl": "https://github.com/yuebaiqingfeng/MinecraftServerStatus"
+  },
+  {
+    "id": "sarkozyfan.maibot_plugin_endfield",
+    "repositoryUrl": "https://github.com/sarkozyfan/maibot_plugin_endfield"
   }
 ]
