@@ -594,5 +594,9 @@
   {
     "id": "SengokuCola.maimai-birdwatching-plugin",
     "repositoryUrl": "https://github.com/SengokuCola/maimai_birdwatching_plugin"
+  },
+  {
+    "id": "SengokuCola.maimai-niuniu-plugin",
+    "repositoryUrl": "https://github.com/SengokuCola/maimai-niuniu-plugin"
   }
 ]
