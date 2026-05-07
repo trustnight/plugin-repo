@@ -598,5 +598,9 @@
   {
     "id": "SengokuCola.maimai-niuniu-plugin",
     "repositoryUrl": "https://github.com/SengokuCola/maimai-niuniu-plugin"
+  },
+  {
+    "id": "sengokucola.aliyun-tts-plugin",
+    "repositoryUrl": "https://github.com/SengokuCola/aliyun-tts-plugin"
   }
 ]
