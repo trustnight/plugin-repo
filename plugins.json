@@ -626,5 +626,9 @@
   {
     "id": "pspixel.ai-drawing-plugin",
     "repositoryUrl": "https://github.com/Pspixel/ai-drawing-plugin"
+  },
+  {
+    "id": "litroenade.maibot-bridge-adapter",
+    "repositoryUrl": "https://github.com/litroenade/maibot-bridge-adapter"
   }
 ]
