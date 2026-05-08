@@ -602,5 +602,9 @@
   {
     "id": "sengokucola.aliyun-tts-plugin",
     "repositoryUrl": "https://github.com/SengokuCola/aliyun-tts-plugin"
+  },
+  {
+    "id": "small_sunshine.prompt-injection-guard",
+    "repositoryUrl": "https://github.com/MCYXG233/prompt_injection_guard_new"
   }
 ]
