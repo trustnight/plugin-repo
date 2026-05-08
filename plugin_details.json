@@ -3,7 +3,7 @@
     "id": "SengokuCola.Mute-Plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.5.0",
+      "version": "4.6.0",
       "name": "群聊禁言管理插件 (Mute Plugin)",
       "description": "群聊禁言管理插件，提供智能禁言和手动禁言命令",
       "author": {
@@ -28,6 +28,7 @@
       "dependencies": [],
       "capabilities": [
         "api.call",
+        "api.list",
         "message.get_by_id",
         "person.get_id_by_name",
         "person.get_value",
@@ -2537,32 +2538,61 @@
   {
     "id": "bockegai.diary_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "version": "3.0.0",
       "name": "日记插件 (Diary Plugin)",
-      "version": "2.1.0",
-      "description": "让麦麦能够回忆和记录每一天的聊天，生成个性化的日记内容(适配0.10.0及以上)",
+      "description": "让麦麦能够回忆和记录每一天的聊天，生成个性化的日记内容(适配新版 MaiBot SDK 2.3+)",
       "author": {
-        "name": "约瑟夫.k",
+        "name": "约瑟夫.k & 晴空",
         "url": "https://github.com/bockegai"
       },
       "license": "MIT",
-      "host_application": {
-        "min_version": "0.10.2"
+      "urls": {
+        "repository": "https://github.com/bockegai/diary_plugin",
+        "homepage": "https://github.com/bockegai/diary_plugin",
+        "issues": "https://github.com/bockegai/diary_plugin/issues"
       },
-      "homepage_url": "https://github.com/bockegai/diary_plugin",
-      "repository_url": "https://github.com/bockegai/diary_plugin",
-      "keywords": [
-        "日记",
-        "记录",
-        "回忆",
-        "QQ空间"
+      "host_application": {
+        "min_version": "0.10.2",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.3.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.24.0"
+        },
+        {
+          "type": "python_package",
+          "name": "pytz",
+          "version_spec": ">=2023.3"
+        },
+        {
+          "type": "python_package",
+          "name": "openai",
+          "version_spec": ">=1.0.0"
+        }
       ],
-      "categories": [
-        "效率工具",
-        "社交"
+      "capabilities": [
+        "llm.generate",
+        "message.get_by_time",
+        "message.get_by_time_in_chat",
+        "chat.get_stream_by_group_id",
+        "chat.get_stream_by_user_id",
+        "config.get",
+        "send.text"
       ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales"
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "bockegai.diary-plugin"
     }
   },
   {
@@ -2871,7 +2901,7 @@
     "id": "TAIY2020.custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.0",
+      "version": "2.2.3",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -8736,7 +8766,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "0.1.1",
+      "version": "0.2.1",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "适用于SnowLuma的Maibot适配器/（开发版）/SnowLuma WebSocket adapter plugin for MaiBot message gateway.",
       "author": {
@@ -8767,6 +8797,173 @@
         ]
       },
       "id": "maibot-team.snowluma-adapter"
+    }
+  },
+  {
+    "id": "com.mcyxg233.acpoke-plugin-new",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "com.mcyxg233.acpoke-plugin-new",
+      "version": "1.0.0",
+      "name": "戳一戳插件",
+      "description": "全新重构的戳一戳插件，做到真正的装载即用！一个主动发起’戳一戳’的 MaiMai 插件，主动发起戳一戳，增添群聊乐趣。本分支适配新版 MaiBot SDK。",
+      "author": {
+        "name": "Small_sunshine",
+        "url": "https://github.com/MCYXG233"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/MCYXG233/acpoke_plugin_new",
+        "homepage": "https://github.com/MCYXG233/acpoke_plugin_new"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send_message"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      },
+      "original_project": {
+        "repository": "https://github.com/Heximiao/acpoke_plugin",
+        "author": "何夕",
+        "description": "本分支基于原项目适配新版 MaiBot SDK"
+      }
+    }
+  },
+  {
+    "id": "pspixel.ai-drawing-plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "AI 绘图插件",
+      "version": "1.2.0",
+      "description": "基于 Stable Diffusion WebUI API 的 AI 绘图插件，支持智能绘图和命令绘图，提供 Action 和 Command 组件，支持模型切换、采样器调整、图像审查和黑白名单等高级功能",
+      "author": {
+        "name": "Pspixel",
+        "url": "https://github.com/Pspixel"
+      },
+      "license": "AGPL-3.0",
+      "host_application": {
+        "min_version": "0.11.0"
+      },
+      "repository_url": "https://github.com/Pspixel/ai-drawing-plugin",
+      "keywords": [
+        "AI",
+        "绘图",
+        "Stable Diffusion",
+        "图像生成",
+        "文生图",
+        "AI绘画",
+        "SD",
+        "图片生成",
+        "图像审查",
+        "NSFW过滤"
+      ],
+      "categories": [
+        "Content Generation",
+        "Multimedia"
+      ],
+      "default_locale": "zh-CN",
+      "id": "pspixel.ai-drawing-plugin",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "general",
+        "components": [
+          {
+            "type": "action",
+            "name": "ai_drawing",
+            "description": "智能 AI 绘图动作，当用户要求生成图片时自动触发"
+          },
+          {
+            "type": "command",
+            "name": "draw",
+            "description": "绘图命令，使用 /draw <描述> 生成图片"
+          },
+          {
+            "type": "command",
+            "name": "drawhelp",
+            "description": "显示 AI 绘图插件的��助信息"
+          },
+          {
+            "type": "command",
+            "name": "drawmodel",
+            "description": "查看当前使用的 Stable Diffusion 模型"
+          },
+          {
+            "type": "command",
+            "name": "switchmodel",
+            "description": "查看可选模型列表或切换 Stable Diffusion 模型"
+          },
+          {
+            "type": "command",
+            "name": "sampler",
+            "description": "查看或切换采样器"
+          },
+          {
+            "type": "command",
+            "name": "scheduler",
+            "description": "查看或切换调度器"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "litroenade.maibot-bridge-adapter",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "0.1.0",
+      "name": "maibot-bridge-adapter",
+      "description": "多端适配器以及车万女仆mod接入适配",
+      "author": {
+        "name": "litroenade",
+        "url": "https://github.com/litroenade"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/litroenade/maibot-bridge-adapter",
+        "homepage": "https://github.com/litroenade/maibot-bridge-adapter",
+        "documentation": "https://github.com/litroenade/maibot-bridge-adapter",
+        "issues": "https://github.com/litroenade/maibot-bridge-adapter/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.9"
+        }
+      ],
+      "capabilities": [
+        "llm.generate",
+        "llm.generate_with_tools",
+        "api.call",
+        "api.list",
+        "chat.get_stream_by_group_id",
+        "send.text"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
+      "id": "maibot-bridge-adapter"
     }
   }
 ]
