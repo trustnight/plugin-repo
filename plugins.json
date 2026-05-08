@@ -630,5 +630,9 @@
   {
     "id": "litroenade.maibot-bridge-adapter",
     "repositoryUrl": "https://github.com/litroenade/maibot-bridge-adapter"
+  },
+  {
+    "id": "CSSQY.RunTime_Tracker_Plugin",
+    "repositoryUrl": "https://github.com/CSSQY/RunTime_Tracker_Plugin"
   }
 ]
