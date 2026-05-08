@@ -634,5 +634,9 @@
   {
     "id": "CSSQY.RunTime_Tracker_Plugin",
     "repositoryUrl": "https://github.com/CSSQY/RunTime_Tracker_Plugin"
+  },
+  {
+    "id": "emoji-text-selection",
+    "repositoryUrl": "https://github.com/hsd221/maibot-plugin-emoji-text-selection"
   }
 ]
