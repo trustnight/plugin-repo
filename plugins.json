@@ -638,5 +638,9 @@
   {
     "id": "emoji-text-selection",
     "repositoryUrl": "https://github.com/hsd221/maibot-plugin-emoji-text-selection"
+  },
+  {
+    "id": "Maboroshinatsu.maibot-deskpet-plugin",
+    "repositoryUrl": "https://github.com/Maboroshinatsu/maibot-deskpet-plugin"
   }
 ]
