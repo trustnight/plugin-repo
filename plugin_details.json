@@ -3964,78 +3964,42 @@
   {
     "id": "saberlights.smart_segmentation_plugin",
     "manifest": {
-      "manifest_version": 1,
-      "name": "智能分段插件 (Smart Segmentation Plugin)",
+      "manifest_version": 2,
       "version": "1.0.0",
-      "description": "使用 LLM 智能切分回复文本，在语义自然的地方切分，保持原文内容不变，让回复更加灵活自然",
+      "name": "智能分段插件 (Smart Segmentation Plugin)",
+      "description": "使用 LLM 智能切分回复文本，在语义自然的地方切分，保持原文内容不变，让回复更加灵活自然。",
       "author": {
         "name": "久远",
         "url": "https://github.com/saberlights"
       },
       "license": "GPL-v3.0-or-later",
-      "homepage_url": "https://github.com/saberlights/smart_segmentation_plugin",
-      "repository_url": "https://github.com/saberlights/smart_segmentation_plugin",
+      "urls": {
+        "repository": "https://github.com/saberlights/smart_segmentation_plugin",
+        "homepage": "https://github.com/saberlights/smart_segmentation_plugin",
+        "documentation": "https://github.com/saberlights/smart_segmentation_plugin",
+        "issues": "https://github.com/saberlights/smart_segmentation_plugin/issues"
+      },
       "host_application": {
-        "name": "MaiBot",
-        "min_version": "0.11.0"
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
       },
-      "keywords": [
-        "segmentation",
-        "text-processing",
-        "natural-language",
-        "smart-split",
-        "llm"
-      ],
-      "categories": [
-        "Text Processing",
-        "AI Enhancement"
-      ],
-      "default_locale": "zh-CN",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "enhancement",
-        "components": [
-          {
-            "type": "event_handler",
-            "name": "smart_segmentation_handler",
-            "description": "使用LLM智能切分回复文本",
-            "event_type": "after_llm",
-            "intercept_message": true
-          }
-        ],
-        "features": [
-          "智能文本切分",
-          "保持原文内容不变",
-          "语义自然停顿",
-          "可配置切分风格",
-          "使用小模型快速处理"
-        ],
-        "dependencies": {
-          "python": [],
-          "plugins": [],
-          "external_api": []
-        },
-        "config": {
-          "config_file": "config.toml",
-          "has_default_config": true
-        }
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
       },
-      "permissions": [
-        "message.intercept",
-        "llm.call"
+      "dependencies": [],
+      "capabilities": [
+        "config.get_all",
+        "send.text",
+        "llm.generate"
       ],
-      "changelog": {
-        "1.0.0": {
-          "date": "2025-11-27",
-          "changes": [
-            "初始版本发布",
-            "实现智能文本分段功能",
-            "支持多种分段风格配置",
-            "集成 LLM 语义分析"
-          ]
-        }
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
+        ]
       },
-      "id": "saberlights.smart_segmentation_plugin"
+      "id": "saberlights.smart-segmentation-plugin"
     }
   },
   {
@@ -6691,7 +6655,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID ��表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -8688,7 +8652,7 @@
     "manifest": {
       "manifest_version": 2,
       "version": "1.0.1",
-      "name": "napcat_adapter_builtin",
+      "name": "Napcat_Adapter",
       "description": "Built-in NapCat adapter plugin for QQ / NapCat message gateway and platform actions.",
       "author": {
         "name": "MaiBot Team",
@@ -8964,6 +8928,94 @@
         ]
       },
       "id": "maibot-bridge-adapter"
+    }
+  },
+  {
+    "id": "CSSQY.RunTime_Tracker_Plugin",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "Run Time Tracker Plugin",
+      "version": "1.1.0",
+      "description": "一个对接时间跟踪应用程序的插件，用于麦麦监控您的设备使用时间。",
+      "author": {
+        "name": "CSSQY",
+        "url": "https://github.com/CSSQY/"
+      },
+      "license": "MIT",
+      "homepage_url": "https://github.com/CSSQY/RunTime_Tracker_Plugin/",
+      "repository_url": "https://github.com/CSSQY/RunTime_Tracker_Plugin/",
+      "host_application": {
+        "min_version": "0.8.0"
+      },
+      "keywords": [
+        "full",
+        "command",
+        "tool"
+      ],
+      "categories": [
+        "Other",
+        "Utility Tools",
+        "External Integration"
+      ],
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "general",
+        "components": [
+          {
+            "type": "command",
+            "name": "Run_Time_Tracker_plugin_command",
+            "description": "查询设备使用时间统计"
+          },
+          {
+            "type": "tool",
+            "name": "Run_Time_Tracker_plugin_tool",
+            "description": "LLM 可调用的设备查询工具"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "emoji-text-selection",
+    "manifest": {
+      "manifest_version": 1,
+      "version": "0.1.0",
+      "name": "emoji_text_selection",
+      "description": "纯文本表情选择插件——绕过内置 VLM 表情选择，用 Levenshtein 文本匹配发送表情。",
+      "author": {
+        "name": "hsd221",
+        "url": "https://github.com/hsd221"
+      },
+      "license": "GPL-v3.0-or-later",
+      "urls": {
+        "repository": "https://github.com/hsd221/maibot-plugin-emoji-text-selection",
+        "homepage": "https://github.com/hsd221/maibot-plugin-emoji-text-selection",
+        "documentation": "https://github.com/hsd221/maibot-plugin-emoji-text-selection",
+        "issues": "https://github.com/hsd221/maibot-plugin-emoji-text-selection/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "emoji.get_by_description",
+        "send.emoji"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
+      "id": "maibot-team.emoji-text-selection",
+      "repository_url": "https://github.com/hsd221/maibot-plugin-emoji-text-selection",
+      "homepage_url": "https://github.com/hsd221/maibot-plugin-emoji-text-selection"
     }
   }
 ]
