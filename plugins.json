@@ -642,5 +642,9 @@
   {
     "id": "Maboroshinatsu.maibot-deskpet-plugin",
     "repositoryUrl": "https://github.com/Maboroshinatsu/maibot-deskpet-plugin"
+  },
+  {
+    "id": "Ojinjin_need",
+    "repositoryUrl": "https://github.com/5i0721/Ojinjin_need"
   }
 ]
