@@ -1153,53 +1153,67 @@
   {
     "id": "internetsb.Maizone",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "internetsb.maizone",
+      "version": "3.0.0",
       "name": "Maizone（麦麦空间）",
-      "version": "2.5.0",
-      "description": "让你的麦麦发QQ空间，评论，点赞",
+      "description": "让麦麦阅读、评论、点赞、发送QQ空间",
       "author": {
         "name": "internetsb",
         "url": "https://github.com/internetsb"
       },
       "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/internetsb/Maizone"
+      },
       "host_application": {
-        "min_version": "0.10.3"
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
       },
-      "homepage_url": "https://github.com/internetsb/Maizone",
-      "repository_url": "https://github.com/internetsb/Maizone",
-      "keywords": [
-        "Qzone",
-        "qq空间",
-        "说说",
-        "动态",
-        "评论",
-        "点赞"
-      ],
-      "categories": [
-        "Content Generation",
-        "External Integration"
-      ],
-      "plugin_info": {
-        "is_built_in": false,
-        "components": [
-          {
-            "type": "action",
-            "name": "send_feed",
-            "description": "根据指定主题发送一条说说"
-          },
-          {
-            "type": "action",
-            "name": "read_feed",
-            "description": "读取指定好友最近的说说，并评论点赞"
-          },
-          {
-            "type": "command",
-            "name": "send_feed",
-            "description": "根据指定主题发送一条说说"
-          }
-        ]
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
       },
-      "id": "internetsb.Maizone"
+      "dependencies": [
+        {
+          "type": "plugin",
+          "id": "maibot-team.napcat-adapter",
+          "version_spec": ">=0.1.0"
+        },
+        {
+          "type": "python_package",
+          "name": "bs4",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "json5",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "requests",
+          "version_spec": ">=0.0.1"
+        },
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.0.1"
+        }
+      ],
+      "capabilities": [
+        "send.text",
+        "llm.generate",
+        "config.get",
+        "llm.get_available_models",
+        "message.get_recent",
+        "api.call",
+        "emoji.get_by_description",
+        "database.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
@@ -1672,41 +1686,35 @@
   {
     "id": "XinxInxiN0.bilibili_video_sender_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "xinxinxin0.bilibili-video-sender",
+      "version": "2.0.1",
       "name": "麦麦发 B 站视频",
-      "version": "1.4.3",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
         "name": "XinxInxiN0",
         "url": "https://github.com/XinxInxiN0"
       },
       "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin"
+      },
       "host_application": {
-        "min_version": "0.9.0"
+        "min_version": "1.0.0",
+        "max_version": "2.0.0"
       },
-      "homepage_url": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin",
-      "repository_url": "https://github.com/XinxInxiN0/bilibili_video_sender_plugin",
-      "keywords": [
-        "bilibili",
-        "video",
-        "send"
-      ],
-      "categories": [
-        "Multimedia",
-        "Utility Tools"
-      ],
-      "default_locale": "zh-CN",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "utility",
-        "components": [],
-        "features": [
-          "自动识别 B 站链接",
-          "发送视频文件",
-          "支持 b23.tv 短链"
-        ]
+      "sdk": {
+        "min_version": "2.3.0",
+        "max_version": "2.99.0"
       },
-      "id": "XinxInxiN0.bilibili_video_sender_plugin"
+      "capabilities": [
+        "send.text",
+        "send.custom",
+        "config.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
@@ -6655,7 +6663,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID ���表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -9067,6 +9075,62 @@
       "categories": [
         "Group Management"
       ]
+    }
+  },
+  {
+    "id": "sengokucola.better-image",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "Better Image",
+      "description": "提供互联网搜图、历史消息图片提取、裁切、放大，并发送上下文图片的工具。",
+      "author": {
+        "name": "SengokuCola",
+        "url": "https://github.com/SengokuCola"
+      },
+      "license": "MIT",
+      "homepage_url": "https://github.com/SengokuCola/better_image",
+      "repository_url": "https://github.com/SengokuCola/better_image",
+      "issue_url": "https://github.com/SengokuCola/better_image/issues",
+      "keywords": [
+        "image",
+        "search",
+        "crop",
+        "context"
+      ],
+      "categories": [
+        "多媒体",
+        "实用工具"
+      ],
+      "urls": {
+        "repository": "https://github.com/SengokuCola/better_image",
+        "homepage": "https://github.com/SengokuCola/better_image",
+        "documentation": "https://github.com/SengokuCola/better_image",
+        "issues": "https://github.com/SengokuCola/better_image/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        "httpx"
+      ],
+      "capabilities": [
+        "message.get_by_id",
+        "send.image"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "sengokucola.better-image"
     }
   }
 ]
