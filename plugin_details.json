@@ -1642,45 +1642,39 @@
   {
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "version": "2.1.0",
       "name": "B站动态推送",
-      "version": "1.6.0",
-      "description": "适用于MaiBot的B站动态订阅插件（maisaka版请去仓库r-dev分支）",
+      "description": "适用于MaiBot的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
         "name": "白狐",
         "url": "https://github.com/whitefox20011120"
       },
       "license": "MIT",
-      "host_application": {
-        "min_version": "0.10.0"
+      "urls": {
+        "repository": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin"
       },
-      "homepage_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
-      "repository_url": "https://github.com/whitefox20011120/bilibili_dynamic_push_plugin",
-      "keywords": [
-        "bilibili",
-        "动态订阅",
-        "推送",
-        "监控",
-        "UP主"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "config.get",
+        "api.call"
       ],
-      "categories": [
-        "Utility Tools"
-      ],
-      "plugin_info": {
-        "is_built_in": false,
-        "components": [
-          {
-            "type": "command",
-            "name": "bili_control",
-            "description": "B站订阅"
-          }
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
         ]
       },
-      "python_dependencies": [
-        "bilibili-api-python>=16.2.0",
-        "aiohttp"
-      ],
-      "id": "whitefox20011120.bilibili_dynamic_push_plugin"
+      "id": "whitefox.bilibili-dynamic-push"
     }
   },
   {
