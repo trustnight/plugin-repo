@@ -658,5 +658,9 @@
   {
     "id": "maimai-drawpic-plugin",
     "repositoryUrl": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin"
+  },
+  {
+    "id": "maibot_plugin_rocom_merchant",
+    "repositoryUrl": "https://github.com/hydrogen-francium/maibot_plugin_rocom_merchant"
   }
 ]
