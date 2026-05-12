@@ -654,5 +654,9 @@
   {
     "id": "TAIY2020.smart_poke_plugin",
     "repositoryUrl": "https://github.com/TAIY2020/smart_poke_plugin"
+  },
+  {
+    "id": "maimai-drawpic-plugin",
+    "repositoryUrl": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin"
   }
 ]
