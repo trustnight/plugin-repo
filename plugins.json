@@ -650,5 +650,9 @@
   {
     "id": "sengokucola.better-image",
     "repositoryUrl": "https://github.com/SengokuCola/better_image"
+  },
+  {
+    "id": "TAIY2020.smart_poke_plugin",
+    "repositoryUrl": "https://github.com/TAIY2020/smart_poke_plugin"
   }
 ]
