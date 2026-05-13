@@ -666,5 +666,9 @@
   {
     "id": "exynos967.telegram-adapter",
     "repositoryUrl": "https://github.com/exynos967/MaiBot-Telegram-Adapter"
+  },
+  {
+    "id": "RaTaiHok.goodnight_sleep_manager",
+    "repositoryUrl": "https://github.com/RaTaiHok/goodnight_sleep_manager"
   }
 ]
