@@ -6684,7 +6684,7 @@
           "refresh_interval_minutes": {
             "type": "integer",
             "default": 30,
-            "description": "人物画像定时刷新周期（分钟）"
+            "description": "人物画像定时���新周期（分钟）"
           },
           "active_window_hours": {
             "type": "number",
@@ -8373,7 +8373,7 @@
           }
         ],
         "features": [
-          "指定���间段内以概率触发主动聊天",
+          "指定时间段内以概率触发主动聊天",
           "支持基于历史聊天记录找话题（延续、吐槽、联想）",
           "支持基于知识库/人设自由发挥找话题",
           "支持预置话题列表，AI围绕主题展开聊天",
@@ -9013,7 +9013,8 @@
       "capabilities": [
         "send.emoji",
         "emoji.get_emotions",
-        "emoji.get_all",
+        "emoji.get_by_description",
+        "emoji.get_random",
         "llm.generate"
       ],
       "i18n": {
@@ -9057,7 +9058,9 @@
           "version_spec": ">=12.0"
         }
       ],
-      "capabilities": [],
+      "capabilities": [
+        "llm.generate"
+      ],
       "i18n": {
         "default_locale": "zh-CN",
         "supported_locales": [
@@ -9162,6 +9165,178 @@
         ]
       },
       "id": "sengokucola.better-image"
+    }
+  },
+  {
+    "id": "TAIY2020.smart_poke_plugin",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.2.0",
+      "name": "智能戳一戳插件 | Smart Poke Plugin",
+      "description": "拟人化 QQ 戳一戳响应插件：被戳时根据人设、上下文和概率，自然地回戳、文字调侃、发表情或选择性沉默。支持暴戳检测、冷却限频与黑白名单。",
+      "author": {
+        "name": "TaiYang",
+        "url": "https://github.com/TAIY2020"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/TAIY2020/smart_poke_plugin",
+        "homepage": "https://github.com/TAIY2020/smart_poke_plugin",
+        "documentation": "https://github.com/TAIY2020/smart_poke_plugin",
+        "issues": "https://github.com/TAIY2020/smart_poke_plugin/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.emoji",
+        "api.call",
+        "emoji.get_random",
+        "emoji.get_by_description",
+        "emoji.get_emotions",
+        "chat.get_stream_by_group_id",
+        "chat.get_stream_by_user_id"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "TAIY2020.smart_poke_plugin"
+    }
+  },
+  {
+    "id": "maimai-drawpic-plugin",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "maimai-drawpic-plugin",
+      "version": "1.1.0",
+      "name": "麦麦绘图",
+      "description": "让麦麦拥有图片创建与图片编辑的能力，支持 OpenAI / Google 图片模型",
+      "author": {
+        "name": "清蒸云鸭",
+        "url": "https://github.com/WhiteCloudOL"
+      },
+      "license": "AGPL-3.0",
+      "urls": {
+        "repository": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin",
+        "homepage": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin",
+        "documentation": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin/README.md",
+        "issues": "https://github.com/WhiteCloudOL/maimai-drawpic-plugin/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "chat.get_all_streams",
+        "chat.get_group_streams",
+        "chat.get_private_streams",
+        "chat.get_stream_by_group_id",
+        "chat.get_stream_by_user_id",
+        "message.get_recent",
+        "message.get_by_id"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "i18n",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      }
+    }
+  },
+  {
+    "id": "maibot_plugin_rocom_merchant",
+    "manifest": {
+      "manifest_version": 1,
+      "name": "洛克王国远行商人",
+      "version": "1.0.0",
+      "description": "洛克王国远行商人查询与订阅播报插件（MaiBot 版本，支持图片渲染）。",
+      "author": {
+        "name": "hydrogen-francium",
+        "url": "https://github.com/hydrogen-francium"
+      },
+      "license": "MIT",
+      "host_application": {
+        "min_version": "0.7.0"
+      },
+      "homepage_url": "https://github.com/hydrogen-francium/maibot_plugin_rocom_merchant",
+      "repository_url": "https://github.com/hydrogen-francium/maibot_plugin_rocom_merchant",
+      "keywords": [
+        "rocom",
+        "洛克王国",
+        "远行商人",
+        "wegame"
+      ],
+      "categories": [
+        "External Integration",
+        "Utility Tools"
+      ],
+      "default_locale": "zh-CN",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "general",
+        "components": [
+          {
+            "type": "command",
+            "name": "merchant_query",
+            "description": "查询当前远行商人商品（图文）"
+          },
+          {
+            "type": "command",
+            "name": "merchant_subscribe",
+            "description": "订阅远行商人推送（仅管理员）"
+          },
+          {
+            "type": "command",
+            "name": "merchant_unsubscribe",
+            "description": "取消远行商人推送（仅管理员）"
+          },
+          {
+            "type": "command",
+            "name": "merchant_broadcast",
+            "description": "临时开关定时播报（仅管理员）"
+          },
+          {
+            "type": "command",
+            "name": "merchant_rewrite",
+            "description": "临时开关播报 LLM 重写（仅管理员）"
+          },
+          {
+            "type": "command",
+            "name": "merchant_list_subscriptions",
+            "description": "查看远行商人订阅列表（仅管理员）"
+          },
+          {
+            "type": "command",
+            "name": "rocom_egg_search",
+            "description": "查蛋 / 身高体重反查"
+          },
+          {
+            "type": "command",
+            "name": "rocom_breeding",
+            "description": "配种判定 / 想孵某精灵"
+          }
+        ]
+      }
     }
   }
 ]
