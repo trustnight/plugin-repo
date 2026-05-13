@@ -6684,12 +6684,12 @@
           "refresh_interval_minutes": {
             "type": "integer",
             "default": 30,
-            "description": "人物画像定时���新周期（分钟）"
+            "description": "人物画像定时刷新周期（分钟）"
           },
           "active_window_hours": {
             "type": "number",
             "default": 72,
-            "description": "活跃人物窗口（小时）"
+            "description": "活跃人物窗口（小时���"
           },
           "max_refresh_per_cycle": {
             "type": "integer",
@@ -9219,7 +9219,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持 OpenAI / Google 图片模型",
       "author": {
@@ -9337,6 +9337,86 @@
           }
         ]
       }
+    }
+  },
+  {
+    "id": "exynos967.telegram-adapter",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "Telegram_Adapter",
+      "description": "Telegram Bot API adapter plugin for MaiBot",
+      "author": {
+        "name": "薄暝",
+        "url": "https://github.com/exynos967/MaiBot-Telegram-Adapter"
+      },
+      "license": "AGPL-v3.0-or-later",
+      "urls": {
+        "repository": "https://github.com/exynos967/MaiBot-Telegram-Adapter",
+        "homepage": "https://github.com/exynos967/MaiBot-Telegram-Adapter",
+        "issues": "https://github.com/exynos967/MaiBot-Telegram-Adapter/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
+      "id": "exynos967.telegram-adapter"
+    }
+  },
+  {
+    "id": "RaTaiHok.goodnight_sleep_manager",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.1",
+      "name": "晚安睡眠管理",
+      "description": "当 Bot 在合适时间主动说出晚安或准备睡觉时，进入临时睡眠状态，并在睡眠期间暂停新消息、表达学习、Planner 结果和出站消息",
+      "author": {
+        "name": "Neko_RTHsama",
+        "url": "https://github.com/RaTaiHok"
+      },
+      "license": "GPL-v3.0-or-later",
+      "urls": {
+        "repository": "https://github.com/RaTaiHok/goodnight_sleep_manager",
+        "homepage": "https://github.com/RaTaiHok/goodnight_sleep_manager",
+        "documentation": "https://github.com/RaTaiHok/goodnight_sleep_manager",
+        "issues": "https://github.com/RaTaiHok/goodnight_sleep_manager/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.4.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "llm.generate",
+        "config.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "i18n",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
+      "id": "local.goodnight-sleep-manager"
     }
   }
 ]
