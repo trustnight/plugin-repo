@@ -662,5 +662,9 @@
   {
     "id": "maibot_plugin_rocom_merchant",
     "repositoryUrl": "https://github.com/hydrogen-francium/maibot_plugin_rocom_merchant"
+  },
+  {
+    "id": "exynos967.telegram-adapter",
+    "repositoryUrl": "https://github.com/exynos967/MaiBot-Telegram-Adapter"
   }
 ]
