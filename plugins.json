@@ -682,5 +682,9 @@
   {
     "id": "chartyr.Mai-Skill-Loader",
     "repositoryUrl": "https://github.com/CharTyr/Mai-Skill-Loader"
+  },
+  {
+    "id": "Emilia-awa.maibot-mimotts-voice",
+    "repositoryUrl": "https://github.com/Emilia-awa/maibot-mimotts-voice"
   }
 ]
