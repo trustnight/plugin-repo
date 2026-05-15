@@ -6684,7 +6684,7 @@
           "refresh_interval_minutes": {
             "type": "integer",
             "default": 30,
-            "description": "人物画像定时刷新周期（分钟）"
+            "description": "人物画像定时刷��周期（分钟）"
           },
           "active_window_hours": {
             "type": "number",
@@ -8738,7 +8738,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "0.2.1",
+      "version": "0.2.2",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "适用于SnowLuma的Maibot适配器/（开发版）/SnowLuma WebSocket adapter plugin for MaiBot message gateway.",
       "author": {
@@ -8987,7 +8987,7 @@
     "id": "emoji-text-selection",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.0",
+      "version": "1.2.0",
       "name": "Emoji Text Selector",
       "description": "纯文本情绪标签匹配的表情包选择工具。LLM 根据上下文从情绪标签列表中选出最合适的标签，插件按标签精确匹配并发送表情包。",
       "author": {
@@ -9014,8 +9014,8 @@
         "send.emoji",
         "emoji.get_emotions",
         "emoji.get_by_description",
-        "emoji.get_random",
-        "llm.generate"
+        "llm.generate",
+        "message.get_recent"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -9171,7 +9171,7 @@
     "id": "TAIY2020.smart_poke_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.0",
+      "version": "1.5.0",
       "name": "智能戳一戳插件 | Smart Poke Plugin",
       "description": "一个让麦麦在 QQ 戳一戳里尽量像真人一样反应的拟人化交互插件。",
       "author": {
