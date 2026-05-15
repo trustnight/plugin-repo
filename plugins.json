@@ -674,5 +674,9 @@
   {
     "id": "ShiinaWhite.maibot-plugin-rocom",
     "repositoryUrl": "https://github.com/ShiinaWhite/maibot-plugin-rocom"
+  },
+  {
+    "id": "CharTyr.MaiBot-Better-Expression",
+    "repositoryUrl": "https://github.com/CharTyr/MaiBot-Better-Expression"
   }
 ]
