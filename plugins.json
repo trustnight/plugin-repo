@@ -686,5 +686,9 @@
   {
     "id": "Emilia-awa.maibot-mimotts-voice",
     "repositoryUrl": "https://github.com/Emilia-awa/maibot-mimotts-voice"
+  },
+  {
+    "id": "A-Dawn.NodeSync",
+    "repositoryUrl": "https://github.com/A-Dawn/NodeSync"
   }
 ]
