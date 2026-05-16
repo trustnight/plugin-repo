@@ -6684,7 +6684,7 @@
           "refresh_interval_minutes": {
             "type": "integer",
             "default": 30,
-            "description": "人物画像定时刷��周期（分钟）"
+            "description": "人物画像定时刷新周期（分钟）"
           },
           "active_window_hours": {
             "type": "number",
@@ -9476,6 +9476,141 @@
         ]
       },
       "id": "shiinawhite.maibot-plugin-rocom"
+    }
+  },
+  {
+    "id": "CharTyr.MaiBot-Better-Expression",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "Better Expression",
+      "description": "使用 embedding 语义匹配替代随机采样，为每次回复选择最贴合当前场景的表达方式",
+      "author": {
+        "name": "CharTyr",
+        "url": "https://github.com/CharTyr"
+      },
+      "license": "GPL-v3.0-or-later",
+      "urls": {
+        "repository": "https://github.com/CharTyr/MaiBot-Better-Expression",
+        "homepage": "https://github.com/CharTyr/MaiBot-Better-Expression",
+        "issues": "https://github.com/CharTyr/MaiBot-Better-Expression/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "llm.embed",
+        "database.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "CharTyr.MaiBot-Better-Expression"
+    }
+  },
+  {
+    "id": "chartyr.Mai-Skill-Loader",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "MaiBot Agent Skills 加载器",
+      "description": "加载 Agent Skills 规范的 skill 文件夹，自动注册为 LLM 可调用的 Tool 组件。支持 direct 和 agent 两种执行模式。",
+      "author": {
+        "name": "CharTyr",
+        "url": "https://github.com/CharTyr"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/CharTyr/Mai-Skill-Loader",
+        "homepage": "https://github.com/CharTyr/Mai-Skill-Loader"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.0"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "python-docx",
+          "version_spec": ">=1.1.2"
+        },
+        {
+          "type": "python_package",
+          "name": "pypdf",
+          "version_spec": ">=5.0.0"
+        }
+      ],
+      "capabilities": [
+        "llm.generate",
+        "llm.generate_with_tools",
+        "llm.get_available_models",
+        "config.get",
+        "message.get_recent",
+        "message.build_readable"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "chartyr.skill-loader"
+    }
+  },
+  {
+    "id": "Emilia-awa.maibot-mimotts-voice",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "Emilia-awa.maibot-mimotts-voice",
+      "name": "MiMo TTS Voice Clone",
+      "version": "1.0.0",
+      "description": "MiMo TTS Voice Clone Plugin for MaiBot - AI语音回复插件，支持自定义音色克隆和风格控制",
+      "author": {
+        "name": "Emilia-awa",
+        "url": "https://github.com/Emilia-awa"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/Emilia-awa/maibot-mimotts-voice",
+        "homepage": "https://github.com/Emilia-awa/maibot-mimotts-voice"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.custom",
+        "send.record",
+        "message.get_by_id",
+        "chat.get_all_streams"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      }
     }
   }
 ]
