@@ -698,5 +698,9 @@
   {
     "id": "Color2333.maibot-daily-news-plugin",
     "repositoryUrl": "https://github.com/Color2333/maibot-daily-news-plugin"
+  },
+  {
+    "id": "Color2333.maibot-multi-platform-parser",
+    "repositoryUrl": "https://github.com/Color2333/maibot-multi-platform-parser"
   }
 ]
