@@ -706,5 +706,9 @@
   {
     "id": "litroenade.maibot-maid-adapter",
     "repositoryUrl": "https://github.com/litroenade/maibot-maid-adapter"
+  },
+  {
+    "id": "hsd221.searxng-search",
+    "repositoryUrl": "https://github.com/hsd221/maibot-plugin-searxng-search"
   }
 ]
