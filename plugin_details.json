@@ -1432,7 +1432,7 @@
         ],
         "features": [
           "多种音色支持（小新、妲己、酥心御姐等）",
-          "双模式触发（智能触发和��动触发）",
+          "双模式触发（智能触���和手动触发）",
           "音色别名映射，方便用户使用",
           "仅群聊可用，确保使用场景合适",
           "完善的错误处理和日志记录",
@@ -1472,7 +1472,7 @@
         "爹系男友": "lucy-voice-m101",
         "暖心姐姐": "lucy-voice-female2",
         "温柔妹妹": "lucy-voice-f36",
-        "书香少女": "lucy-voice-f34"
+        "书香少���": "lucy-voice-f34"
       },
       "configuration": {
         "config_file": "config.toml",
@@ -9658,6 +9658,144 @@
           "本地注入记录持久化",
           "MaiBot 0.12.2 与 1.0 双版本适配"
         ]
+      }
+    }
+  },
+  {
+    "id": "TAIY2020.llm-balance-plugin",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.3.0",
+      "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
+      "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 的账号余额，支持 HTML 卡片可视化输出，仅依赖 Python 标准库。",
+      "author": {
+        "name": "TaiYang",
+        "url": "https://github.com/TAIY2020"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/TAIY2020/llm_balance_plugin",
+        "homepage": "https://github.com/TAIY2020/llm_balance_plugin",
+        "documentation": "https://github.com/TAIY2020/llm_balance_plugin",
+        "issues": "https://github.com/TAIY2020/llm_balance_plugin/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "render.html2png"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "TAIY2020.llm-balance-plugin"
+    }
+  },
+  {
+    "id": "Color2333.maibot-daily-news-plugin",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "Color2333.maibot-daily-news-plugin",
+      "version": "1.0.0",
+      "name": "每日60秒新闻",
+      "description": "每天定时向 QQ 群推送每日 60 秒新闻，支持手动获取和管理员推送。MaiBot 移植版，迁移来源：anka-afk/astrbot_plugin_daily_news。",
+      "author": {
+        "name": "Color2333",
+        "url": "https://github.com/Color2333"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/Color2333/maibot-daily-news-plugin"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.8.0"
+        }
+      ],
+      "capabilities": [
+        "send.text",
+        "send.custom"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
+    }
+  },
+  {
+    "id": "Color2333.maibot-multi-platform-parser",
+    "manifest": {
+      "manifest_version": 2,
+      "id": "Color2333.maibot-multi-platform-parser",
+      "version": "1.0.0",
+      "name": "多平台链接解析",
+      "description": "自动解析抖音、小红书、小黑盒等平台链接，并把图文/视频发送到 QQ 群。MaiBot 移植版，迁移来源：Zhalslar/astrbot_plugin_parser。",
+      "author": {
+        "name": "Color2333",
+        "url": "https://github.com/Color2333"
+      },
+      "license": "MIT",
+      "urls": {
+        "repository": "https://github.com/Color2333/maibot-multi-platform-parser"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiofiles",
+          "version_spec": ">=25.1.0"
+        },
+        {
+          "type": "python_package",
+          "name": "msgspec",
+          "version_spec": ">=0.21.0"
+        },
+        {
+          "type": "python_package",
+          "name": "yt-dlp",
+          "version_spec": ">=2026.3.17"
+        },
+        {
+          "type": "python_package",
+          "name": "bilibili-api-python",
+          "version_spec": ">=17.4.1"
+        }
+      ],
+      "capabilities": [
+        "send.text",
+        "send.custom",
+        "config.get"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
       }
     }
   }
