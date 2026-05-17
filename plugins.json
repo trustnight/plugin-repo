@@ -702,5 +702,9 @@
   {
     "id": "Color2333.maibot-multi-platform-parser",
     "repositoryUrl": "https://github.com/Color2333/maibot-multi-platform-parser"
+  },
+  {
+    "id": "litroenade.maibot-maid-adapter",
+    "repositoryUrl": "https://github.com/litroenade/maibot-maid-adapter"
   }
 ]
