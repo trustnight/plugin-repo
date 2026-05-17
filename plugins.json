@@ -690,5 +690,9 @@
   {
     "id": "A-Dawn.NodeSync",
     "repositoryUrl": "https://github.com/A-Dawn/NodeSync"
+  },
+  {
+    "id": "TAIY2020.llm-balance-plugin",
+    "repositoryUrl": "https://github.com/TAIY2020/llm_balance_plugin"
   }
 ]
