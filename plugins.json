@@ -694,5 +694,9 @@
   {
     "id": "TAIY2020.llm-balance-plugin",
     "repositoryUrl": "https://github.com/TAIY2020/llm_balance_plugin"
+  },
+  {
+    "id": "Color2333.maibot-daily-news-plugin",
+    "repositoryUrl": "https://github.com/Color2333/maibot-daily-news-plugin"
   }
 ]
