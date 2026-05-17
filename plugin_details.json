@@ -1682,7 +1682,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -2903,7 +2903,7 @@
     "id": "TAIY2020.custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.3",
+      "version": "2.2.5",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -2930,7 +2930,8 @@
         "send.text",
         "send.image",
         "config.get",
-        "api.call"
+        "api.call",
+        "component.reload_plugin"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -9072,52 +9073,41 @@
   {
     "id": "Ojinjin_need",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "5i0721.ojinjin-need",
+      "version": "3.0.0",
       "name": "禁禁你的 | 群聊禁言拓展插件",
-      "version": "2.0.2",
       "description": "提供通过指定指令禁言的群聊管理插件，纯中文指令，可扩展可配置",
       "author": {
         "name": "5i0721",
         "url": "https://github.com/5i0721"
       },
       "license": "MIT",
-      "host_application": {
-        "min_version": "0.7.0"
+      "urls": {
+        "repository": "https://github.com/5i0721/Ojinjin_need"
       },
-      "repository_url": "https://github.com/5i0721/Ojinjin_need",
-      "keywords": [
-        "mute",
-        "ban",
-        "unmute",
-        "whip",
-        "禁言",
-        "解禁",
-        "鞭尸",
-        "群管理",
-        "群聊管理",
-        "管理员",
-        "admin",
-        "group",
-        "group management",
-        "中文指令",
-        "禁言插件",
-        "群聊工具",
-        "moderation",
-        "punishment",
-        "discipline",
-        "silence",
-        "kick",
-        "control",
-        "权限管理",
-        "黑名单",
-        "白名单",
-        "filter",
-        "指令",
-        "command"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "1.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "plugin",
+          "id": "maibot-team.napcat-adapter",
+          "version_spec": ">=1.0.0"
+        }
       ],
-      "categories": [
-        "Group Management"
-      ]
+      "capabilities": [
+        "send.text",
+        "api.call"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
@@ -9381,7 +9371,7 @@
     "id": "RaTaiHok.goodnight_sleep_manager",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.1",
+      "version": "1.1.3",
       "name": "晚安睡眠管理",
       "description": "当 Bot 在合适时间主动说出晚安或准备睡觉时，进入临时睡眠状态，并在睡眠期间暂停新消息、表达学习、Planner 结果和出站消息",
       "author": {
@@ -9609,6 +9599,64 @@
         "default_locale": "zh-CN",
         "supported_locales": [
           "zh-CN"
+        ]
+      }
+    }
+  },
+  {
+    "id": "A-Dawn.NodeSync",
+    "manifest": {
+      "manifest_version": 1,
+      "id": "A-Dawn.NodeSync",
+      "name": "NodeSync",
+      "version": "0.1.0",
+      "description": "为多个 MaiBot 提供节点桥梁，支持 server/client 协作、消息对齐、按需推进和私有上下文注入。",
+      "author": {
+        "name": "A-Dawn",
+        "url": "https://github.com/A-Dawn"
+      },
+      "license": "GPL-3.0-only",
+      "host_application": {
+        "min_version": "0.12.2",
+        "max_version": "1.0.0"
+      },
+      "homepage_url": "https://github.com/A-Dawn/NodeSync",
+      "repository_url": "https://github.com/A-Dawn/NodeSync",
+      "keywords": [
+        "maibot",
+        "multi-bot",
+        "coordination",
+        "context-injection",
+        "conversation-bridge"
+      ],
+      "categories": [
+        "External Integration",
+        "Data Analysis & Insights"
+      ],
+      "default_locale": "zh-CN",
+      "plugin_info": {
+        "is_built_in": false,
+        "plugin_type": "multi_bot_coordination",
+        "components": [
+          {
+            "type": "service",
+            "name": "nodesync_server",
+            "description": "内置 HTTP 与 WebSocket 协调服务"
+          },
+          {
+            "type": "client",
+            "name": "nodesync_client",
+            "description": "连接协调服务并执行消息上报、上下文对齐和群内推进"
+          }
+        ],
+        "features": [
+          "多 Bot 节点桥梁",
+          "server/client 双模式",
+          "LLM 话题停滞判断",
+          "按需群内推进",
+          "私有上下文注入",
+          "本地注入记录持久化",
+          "MaiBot 0.12.2 与 1.0 双版本适配"
         ]
       }
     }
