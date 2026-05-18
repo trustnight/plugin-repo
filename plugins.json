@@ -710,5 +710,9 @@
   {
     "id": "hsd221.searxng-search",
     "repositoryUrl": "https://github.com/hsd221/maibot-plugin-searxng-search"
+  },
+  {
+    "id": "a-dawn.oaimage",
+    "repositoryUrl": "https://github.com/A-Dawn/OAImage"
   }
 ]
