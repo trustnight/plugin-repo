@@ -1432,7 +1432,7 @@
         ],
         "features": [
           "多种音色支持（小新、妲己、酥心御姐等）",
-          "双模式触发（智能触���和手动触发）",
+          "双模式触发（智能触发和��动触发）",
           "音色别名映射，方便用户使用",
           "仅群聊可用，确保使用场景合适",
           "完善的错误处理和日志记录",
@@ -1472,7 +1472,7 @@
         "爹系男友": "lucy-voice-m101",
         "暖心姐姐": "lucy-voice-female2",
         "温柔妹妹": "lucy-voice-f36",
-        "书香少���": "lucy-voice-f34"
+        "书香少女": "lucy-voice-f34"
       },
       "configuration": {
         "config_file": "config.toml",
@@ -1682,7 +1682,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.2",
+      "version": "2.0.3",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -8660,9 +8660,9 @@
     "id": "maibot-team.napcat-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.1",
-      "name": "Napcat_Adapter",
-      "description": "Built-in NapCat adapter plugin for QQ / NapCat message gateway and platform actions.",
+      "version": "1.1.0",
+      "name": "Napcat_Adapter 适配器",
+      "description": "插件版Napcat适配器，提供与Napcat的连接功能。",
       "author": {
         "name": "MaiBot Team",
         "url": "https://github.com/Mai-with-u"
@@ -8739,7 +8739,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "0.2.2",
+      "version": "0.3.0",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "适用于SnowLuma的Maibot适配器/（开发版）/SnowLuma WebSocket adapter plugin for MaiBot message gateway.",
       "author": {
@@ -8894,12 +8894,12 @@
       "manifest_version": 2,
       "version": "0.1.0",
       "name": "maibot-bridge-adapter",
-      "description": "多端适配器以及车万女仆mod接入适配",
+      "description": "MaiBot 跨平台桥接房间路由插件",
       "author": {
         "name": "litroenade",
         "url": "https://github.com/litroenade"
       },
-      "license": "MIT",
+      "license": "GPL-v3.0",
       "urls": {
         "repository": "https://github.com/litroenade/maibot-bridge-adapter",
         "homepage": "https://github.com/litroenade/maibot-bridge-adapter",
@@ -8907,23 +8907,16 @@
         "issues": "https://github.com/litroenade/maibot-bridge-adapter/issues"
       },
       "host_application": {
-        "min_version": "1.0.0",
-        "max_version": "1.0.0"
+        "min_version": "0.0.0",
+        "max_version": "0.0.0"
       },
       "sdk": {
         "min_version": "2.0.0",
         "max_version": "2.99.99"
       },
-      "dependencies": [
-        {
-          "type": "python_package",
-          "name": "aiohttp",
-          "version_spec": ">=3.9"
-        }
-      ],
+      "dependencies": [],
       "capabilities": [
         "llm.generate",
-        "llm.generate_with_tools",
         "api.call",
         "api.list",
         "chat.get_stream_by_group_id",
@@ -8988,7 +8981,7 @@
     "id": "emoji-text-selection",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.2.0",
+      "version": "1.2.2",
       "name": "Emoji Text Selector",
       "description": "纯文本情绪标签匹配的表情包选择工具。LLM 根据上下文从情绪标签列表中选出最合适的标签，插件按标签精确匹配并发送表情包。",
       "author": {
@@ -9797,6 +9790,100 @@
       "i18n": {
         "default_locale": "zh-CN"
       }
+    }
+  },
+  {
+    "id": "litroenade.maibot-maid-adapter",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "0.1.0",
+      "name": "maibot-maid-adapter",
+      "description": "MaiBot 女仆适配器，用于接入 TouhouLittleMaid 和 MaidBridge WebSocket",
+      "author": {
+        "name": "litroenade",
+        "url": "https://github.com/litroenade"
+      },
+      "license": "GPL-3.0",
+      "urls": {
+        "repository": "https://github.com/litroenade/maibot-maid-adapter",
+        "homepage": "https://github.com/litroenade/maibot-maid-adapter",
+        "documentation": "https://github.com/litroenade/maibot-maid-adapter",
+        "issues": "https://github.com/litroenade/maibot-maid-adapter/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.9"
+        },
+        {
+          "type": "python_package",
+          "name": "Pillow",
+          "version_spec": ">=10.0"
+        }
+      ],
+      "capabilities": [
+        "api.call",
+        "api.list",
+        "emoji.get_by_description",
+        "emoji.get_random",
+        "llm.generate"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN",
+          "en-US"
+        ]
+      },
+      "id": "maibot-maid-adapter"
+    }
+  },
+  {
+    "id": "hsd221.searxng-search",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "SearXNG Search",
+      "description": "通过 planner 工具调用本地 SearXNG 实例进行网页搜索，支持通用搜索、新闻搜索、图片搜索等多种类别。",
+      "author": {
+        "name": "hsd221",
+        "url": "https://github.com/hsd221"
+      },
+      "license": "GPL-3.0-or-later",
+      "urls": {
+        "repository": "https://github.com/hsd221/maibot-plugin-searxng-search",
+        "homepage": "https://github.com/hsd221/maibot-plugin-searxng-search",
+        "documentation": "https://github.com/hsd221/maibot-plugin-searxng-search",
+        "issues": "https://github.com/hsd221/maibot-plugin-searxng-search/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "llm.generate"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "hsd221.searxng-search"
     }
   }
 ]
