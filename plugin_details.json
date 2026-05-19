@@ -1643,9 +1643,9 @@
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.1.0",
+      "version": "2.3.0",
       "name": "B站动态推送",
-      "description": "适用于MaiBot的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
+      "description": "适用于MaiSaka的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
         "name": "白狐",
         "url": "https://github.com/whitefox20011120"
@@ -9884,6 +9884,55 @@
         ]
       },
       "id": "hsd221.searxng-search"
+    }
+  },
+  {
+    "id": "a-dawn.oaimage",
+    "manifest": {
+      "manifest_version": 2,
+      "version": "1.0.0",
+      "name": "OAImage",
+      "description": "通过可配置生图套餐调用 OpenAI 兼容图片端点，提供文字生图、图生图和 LLM 可调用的生图工具。",
+      "author": {
+        "name": "A-Dawn",
+        "url": "https://github.com/A-Dawn"
+      },
+      "license": "Apache-2.0",
+      "urls": {
+        "repository": "https://github.com/A-Dawn/OAImage",
+        "homepage": "https://github.com/A-Dawn/OAImage",
+        "documentation": "https://github.com/A-Dawn/OAImage/blob/1.0.x/README.md",
+        "issues": "https://github.com/A-Dawn/OAImage/issues"
+      },
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.99"
+      },
+      "sdk": {
+        "min_version": "2.4.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.8.0"
+        }
+      ],
+      "capabilities": [
+        "send.image",
+        "send.text",
+        "message.get_recent",
+        "message.build_readable"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
+        ]
+      },
+      "id": "a-dawn.oaimage"
     }
   }
 ]
