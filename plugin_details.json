@@ -1643,7 +1643,7 @@
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.3.0",
+      "version": "2.4.0",
       "name": "B站动态推送",
       "description": "适用于MaiSaka的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
@@ -1662,7 +1662,18 @@
         "min_version": "2.0.0",
         "max_version": "2.99.99"
       },
-      "dependencies": [],
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "bilibili-api-python",
+          "version_spec": ">=17.4.1"
+        },
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.9.0"
+        }
+      ],
       "capabilities": [
         "config.get",
         "api.call"
@@ -8488,7 +8499,7 @@
     "id": "SengokuCola.maimai-birdwatching-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.0",
+      "version": "1.1.1",
       "name": "麦麦观鸟插件 (MaiMai Birdwatching Plugin)",
       "description": "提供基于百度智能云图像识别接口的鸟类、动物、植物和菜品识别工具。",
       "author": {
@@ -8502,13 +8513,6 @@
         "documentation": "https://cloud.baidu.com/doc/IMAGERECOGNITION/s/Zk3bcxdfr",
         "issues": "https://github.com/SengokuCola/maimai_birdwatching_plugin/issues"
       },
-      "homepage_url": "https://github.com/SengokuCola/maimai_birdwatching_plugin",
-      "repository_url": "https://github.com/SengokuCola/maimai_birdwatching_plugin",
-      "categories": [
-        "实用工具",
-        "多媒体",
-        "外部集成"
-      ],
       "host_application": {
         "min_version": "1.0.0",
         "max_version": "1.0.0"
@@ -9064,52 +9068,12 @@
     }
   },
   {
-    "id": "Ojinjin_need",
-    "manifest": {
-      "manifest_version": 2,
-      "id": "5i0721.ojinjin-need",
-      "version": "3.0.0",
-      "name": "禁禁你的 | 群聊禁言拓展插件",
-      "description": "提供通过指定指令禁言的群聊管理插件，纯中文指令，可扩展可配置",
-      "author": {
-        "name": "5i0721",
-        "url": "https://github.com/5i0721"
-      },
-      "license": "MIT",
-      "urls": {
-        "repository": "https://github.com/5i0721/Ojinjin_need"
-      },
-      "host_application": {
-        "min_version": "1.0.0",
-        "max_version": "1.99.99"
-      },
-      "sdk": {
-        "min_version": "1.0.0",
-        "max_version": "2.99.99"
-      },
-      "dependencies": [
-        {
-          "type": "plugin",
-          "id": "maibot-team.napcat-adapter",
-          "version_spec": ">=1.0.0"
-        }
-      ],
-      "capabilities": [
-        "send.text",
-        "api.call"
-      ],
-      "i18n": {
-        "default_locale": "zh-CN"
-      }
-    }
-  },
-  {
     "id": "sengokucola.better-image",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.1",
+      "version": "1.1.1",
       "name": "Better Image",
-      "description": "提供互联网搜图、历史消息图片提取、裁切、放大，并发送上下文图片的工具。",
+      "description": "提供互联网搜图、历史消息图片提取、裁切、放大、翻转、旋转和缩放工具。",
       "author": {
         "name": "SengokuCola",
         "url": "https://github.com/SengokuCola"
@@ -9137,8 +9101,7 @@
         }
       ],
       "capabilities": [
-        "message.get_by_id",
-        "send.image"
+        "message.get_by_id"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -9203,9 +9166,9 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.3.3",
+      "version": "1.4.0",
       "name": "麦麦绘图",
-      "description": "让麦麦拥有图片创建与图片编辑的能力，支持 OpenAI / Google 图片模型",
+      "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
         "name": "清蒸云鸭",
         "url": "https://github.com/WhiteCloudOL"
@@ -9851,7 +9814,7 @@
     "id": "hsd221.searxng-search",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "SearXNG Search",
       "description": "通过 planner 工具调用本地 SearXNG 实例进行网页搜索，支持通用搜索、新闻搜索、图片搜索等多种类别。",
       "author": {
