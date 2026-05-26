@@ -846,84 +846,45 @@
   {
     "id": "1021143806.mais_art_journal",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "version": "4.0.0",
       "name": "麦麦绘卷（Claude MAInet）",
-      "version": "3.4.0",
-      "description": "智能多模型图片生成插件，支持文生图和图生图自动识别。兼容OpenAI、OpenAI-Chat、豆包、Gemini、魔搭等多种API格式。提供命令式风格转换、模型配置管理、结果缓存、自拍负面提示词、独立生图接口等功能。支持动态模型切换、风格别名、调试开关等高级特性。",
+      "description": "基于 MaiBot 的多模型智能绘图插件。兼容 OpenAI、OpenAI-Chat、豆包（火山方舟）、Gemini、魔搭、硅基流动、砂糖云、梦羽、智谱 GLM、阿里百炼 DashScope（通义千问/万相/Z-Image/可灵）、ComfyUI 等多种 API 格式。提供命令式风格转换、自拍模式、自动自拍发说说、日程感知、模型配置管理、运行时聊天流隔离状态、对外 @API 生图接口等功能。",
       "author": {
-        "name": "Ptrel，Rabbit-Jia-Er，saberlights Kiuon",
+        "name": "Ptrel, Rabbit-Jia-Er, saberlights Kiuon",
         "url": "https://github.com/1021143806/mais_art_journal"
       },
       "license": "GPL-v3.0-or-later",
-      "host_application": {
-        "min_version": "0.10.0"
+      "urls": {
+        "repository": "https://github.com/1021143806/mais_art_journal",
+        "homepage": "https://github.com/1021143806/mais_art_journal",
+        "issues": "https://github.com/1021143806/mais_art_journal/issues"
       },
-      "homepage_url": "https://github.com/1021143806/mais_art_journal",
-      "repository_url": "https://github.com/1021143806/mais_art_journal",
-      "keywords": [
-        "draw",
-        "Expression",
-        "ai",
-        "image"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [],
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "send.command",
+        "send.custom",
+        "config.get",
+        "config.get_plugin",
+        "llm.generate",
+        "message.get_by_time_in_chat",
+        "message.get_by_id",
+        "api.call"
       ],
-      "categories": [
-        "Content Generation",
-        "Multimedia"
-      ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "image_generator",
-        "components": [
-          {
-            "type": "action",
-            "name": "draw_picture",
-            "description": "智能图片生成，自动识别文生图/图生图",
-            "activation_modes": [
-              "keyword",
-              "llm_judge"
-            ],
-            "keywords": [
-              "画",
-              "绘制",
-              "生成图片",
-              "画图",
-              "图生图",
-              "修改图片",
-              "风格转换"
-            ]
-          },
-          {
-            "type": "command",
-            "name": "pic_generation_command",
-            "description": "风格化图生图命令：/dr <风格>",
-            "pattern": "/dr"
-          },
-          {
-            "type": "command",
-            "name": "pic_config_command",
-            "description": "模型配置管理：/dr list、/dr set等",
-            "pattern": "/dr"
-          },
-          {
-            "type": "command",
-            "name": "pic_style_command",
-            "description": "风格管理：/dr styles、/dr style等",
-            "pattern": "/dr"
-          }
-        ],
-        "features": [
-          "智能文生图/图生图识别",
-          "多API格式支持(OpenAI/OpenAI-Chat/豆包/Gemini/魔搭)",
-          "命令式风格转换",
-          "动态模型配置管理",
-          "风格别名系统",
-          "结果缓存机制",
-          "调试开关控制",
-          "支持图生图开关",
-          "自拍负面提示词",
-          "独立生图接口(generate_image_standalone)"
+      "i18n": {
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
         ]
       },
       "id": "1021143806.mais_art_journal"
@@ -3632,9 +3593,9 @@
     "id": "xuqian13.autonomous_planning_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.3.1",
+      "version": "4.4.5",
       "name": "麦麦自主规划插件 v4",
-      "description": "让麦麦具备自主规划能力，通过 LLM 智能生成符合人设的日常生活日程。v4.3.1 hotfix: 移除主程序未提供的 maisaka.replyer.before_request hook 依赖，让 v4.1+ 注入功能能真正生效。",
+      "description": "让麦麦具备自主规划能力，通过 LLM 智能生成符合人设的日常生活日程。v4.4.5: 约定到点真发出（强指令模板）+ /plan regenerate 命令 + ScheduleGenerator 配置单一来源（修 auto_scheduler 漏带 bot_profile）。",
       "author": {
         "name": "靓仔",
         "url": "https://github.com/xuqian13"
@@ -3661,7 +3622,11 @@
         "message.get_recent",
         "message.get_by_time_in_chat",
         "chat.get_all_streams",
-        "knowledge.search"
+        "chat.get_stream_by_group_id",
+        "chat.get_stream_by_user_id",
+        "knowledge.search",
+        "maisaka.proactive.trigger",
+        "frequency.set_adjust"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -4121,9 +4086,9 @@
     "manifest": {
       "manifest_version": 2,
       "id": "Rabbit-Jia-Er.MaiTrace",
-      "version": "3.1.0",
+      "version": "3.1.1",
       "name": "MaiTrace（麦时迹）",
-      "description": "让麦麦发QQ空间、读说说、自动评论点赞、回复评论、写日记，支持日程驱动。",
+      "description": "属于 MaiBot 自己的 QQ 空间生活插件。让麦麦自主发说说、刷动态、点赞回复、写日记，留下属于麦麦自己的时间足迹。",
       "author": {
         "name": "Rabbit-Jia-Er",
         "url": "https://github.com/Rabbit-Jia-Er"
@@ -4961,100 +4926,64 @@
   {
     "id": "ARC.A_Mind",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "version": "1.0.0",
       "name": "A_Mind 智能话题管理插件",
-      "version": "0.3.0",
       "description": "基于大模型的智能话题发起、追踪和回复插件，支持权限控制和自动状态管理",
       "author": {
         "name": "A-Dawn",
         "url": "https://github.com/A-Dawn"
       },
       "license": "AGPL-v3.0-or-later",
-      "host_application": {
-        "min_version": "0.11.0",
-        "max_version": "0.12.3"
+      "urls": {
+        "repository": "https://github.com/A-Dawn/A_Mind",
+        "homepage": "https://github.com/A-Dawn/A_Mind",
+        "documentation": "https://github.com/A-Dawn/A_Mind",
+        "issues": "https://github.com/A-Dawn/A_Mind/issues"
       },
-      "homepage_url": "https://github.com/A-Dawn/A_Mind",
-      "repository_url": "https://github.com/A-Dawn/A_Mind",
-      "keywords": [
-        "topic",
-        "conversation",
-        "AI",
-        "management",
-        "automation"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.0.0"
+      },
+      "sdk": {
+        "min_version": "2.0.0",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "toml",
+          "version_spec": ">=0.10.2,<1.0.0"
+        }
       ],
-      "categories": [
-        "Entertainment & Interaction"
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "send.emoji",
+        "send.forward",
+        "send.hybrid",
+        "send.command",
+        "send.custom",
+        "llm.generate",
+        "llm.generate_with_tools",
+        "llm.get_available_models",
+        "message.get_by_time_in_chat",
+        "config.get",
+        "config.get_plugin",
+        "chat.get_all_streams",
+        "chat.get_group_streams",
+        "chat.get_private_streams",
+        "knowledge.search",
+        "tool.get_definitions"
       ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "conversation_management",
-        "components": [
-          {
-            "type": "command",
-            "name": "topic_create",
-            "description": "创建新话题"
-          },
-          {
-            "type": "command",
-            "name": "topic_list",
-            "description": "查看话题列表"
-          },
-          {
-            "type": "command",
-            "name": "topic_update",
-            "description": "更新话题信息"
-          },
-          {
-            "type": "command",
-            "name": "topic_delete",
-            "description": "删除话题"
-          },
-          {
-            "type": "command",
-            "name": "topic_visibility",
-            "description": "设置话题可见性"
-          },
-          {
-            "type": "command",
-            "name": "topic_check",
-            "description": "手动状态检查"
-          },
-          {
-            "type": "command",
-            "name": "help_command",
-            "description": "显示帮助信息"
-          },
-          {
-            "type": "command",
-            "name": "debug_commands",
-            "description": "调试功能命令"
-          },
-          {
-            "type": "action",
-            "name": "message_tracker",
-            "description": "消息追踪和回复"
-          },
-          {
-            "type": "action",
-            "name": "state_check",
-            "description": "主动状态检查"
-          }
-        ],
-        "features": [
-          "智能话题管理",
-          "权限控制系统",
-          "大模型集成",
-          "自动状态检查",
-          "调试功能支持",
-          "话题捕捉与主动介入",
-          "多API密钥轮询",
-          "高级话题策略"
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": "_locales",
+        "supported_locales": [
+          "zh-CN"
         ]
       },
-      "id": "ARC.A_Mind"
+      "id": "A-Dawn.A-Mind"
     }
   },
   {
@@ -6106,7 +6035,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列���。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -8471,8 +8400,8 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maibot.deskpet-plugin",
-      "version": "0.1.0",
-      "name": "MaiVTB",
+      "version": "0.3.0",
+      "name": "MaiBot Deskpet",
       "description": "为 MaiBot 接入 Live2D 桌面宠物，支持双向对话（消息管线集成）、表情/动作控制、视线追踪、滚轮缩放和拖拽平移。需配合 deskpet-app Electron 前端使用。",
       "author": {
         "name": "MaboroshiNatsu / DeepSeek-V4PRO",
@@ -8496,6 +8425,21 @@
           "type": "python_package",
           "name": "websockets",
           "version_spec": ">=12.0"
+        },
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.8"
+        },
+        {
+          "type": "python_package",
+          "name": "numpy",
+          "version_spec": ">=1.24"
+        },
+        {
+          "type": "python_package",
+          "name": "sherpa-onnx",
+          "version_spec": ">=1.10"
         }
       ],
       "capabilities": [
@@ -8967,7 +8911,7 @@
       "manifest_version": 2,
       "id": "Emilia-awa.maibot-mimotts-voice",
       "name": "MiMo TTS Voice Clone",
-      "version": "1.5.0",
+      "version": "1.5.2",
       "description": "MiMo TTS Voice Clone Plugin for MaiBot - AI语音回复插件，支持自定义音色克隆和风格控制",
       "author": {
         "name": "Emilia-awa",
