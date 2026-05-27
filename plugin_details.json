@@ -1415,7 +1415,7 @@
     "id": "whitefox20011120.bilibili_dynamic_push_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.5.0",
+      "version": "2.6.0",
       "name": "B站动态推送",
       "description": "适用于MaiSaka的B站动态订阅与直播状态自动推送插件（旧版请去仓库分支）",
       "author": {
@@ -8553,7 +8553,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
@@ -8579,6 +8579,7 @@
       "capabilities": [
         "send.text",
         "send.image",
+        "llm.generate",
         "chat.get_all_streams",
         "chat.get_group_streams",
         "chat.get_private_streams",
