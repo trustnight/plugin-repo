@@ -847,7 +847,7 @@
     "id": "1021143806.mais_art_journal",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.0.0",
+      "version": "4.1.0",
       "name": "麦麦绘卷（Claude MAInet）",
       "description": "基于 MaiBot 的多模型智能绘图插件。兼容 OpenAI、OpenAI-Chat、豆包（火山方舟）、Gemini、魔搭、硅基流动、砂糖云、梦羽、智谱 GLM、阿里百炼 DashScope（通义千问/万相/Z-Image/可灵）、ComfyUI 等多种 API 格式。提供命令式风格转换、自拍模式、自动自拍发说说、日程感知、模型配置管理、运行时聊天流隔离状态、对外 @API 生图接口等功能。",
       "author": {
@@ -8356,9 +8356,9 @@
     "id": "emoji-text-selection",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.2.2",
+      "version": "2.0.0",
       "name": "Emoji Text Selector",
-      "description": "纯文本情绪标签匹配的表情包选择工具。LLM 根据上下文从情绪标签列表中选出最合适的标签，插件按标签精确匹配并发送表情包。",
+      "description": "表情包选择工具。支持 embedding 语义向量匹配和文本 LLM 选择",
       "author": {
         "name": "hsd221",
         "url": "https://github.com/hsd221"
@@ -8383,6 +8383,7 @@
         "send.emoji",
         "emoji.get_emotions",
         "emoji.get_by_description",
+        "llm.embed",
         "llm.generate",
         "message.get_recent"
       ],
@@ -8553,7 +8554,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.4.1",
+      "version": "1.5.2",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
