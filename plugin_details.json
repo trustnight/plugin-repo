@@ -927,7 +927,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "internetsb.maizone",
-      "version": "3.0.0",
+      "version": "3.0.1",
       "name": "Maizone（麦麦空间）",
       "description": "让麦麦阅读、评论、点赞、发送QQ空间",
       "author": {
@@ -6035,7 +6035,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列���。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -8356,7 +8356,7 @@
     "id": "emoji-text-selection",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.0.0",
+      "version": "2.0.1",
       "name": "Emoji Text Selector",
       "description": "表情包选择工具。支持 embedding 语义向量匹配和文本 LLM 选择",
       "author": {
