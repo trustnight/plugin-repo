@@ -1465,7 +1465,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.3",
+      "version": "2.0.6",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -6035,7 +6035,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列���。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -8913,7 +8913,7 @@
       "manifest_version": 2,
       "id": "Emilia-awa.maibot-mimotts-voice",
       "name": "MiMo TTS Voice Clone",
-      "version": "1.5.2",
+      "version": "1.6.0",
       "description": "MiMo TTS Voice Clone Plugin for MaiBot - AI语音回复插件，支持自定义音色克隆和风格控制",
       "author": {
         "name": "Emilia-awa",
