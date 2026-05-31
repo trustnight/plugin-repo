@@ -8356,9 +8356,9 @@
     "id": "emoji-text-selection",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.0.1",
+      "version": "2.1.0",
       "name": "Emoji Text Selector",
-      "description": "表情包选择工具。支持 embedding 语义向量匹配和文本 LLM 选择",
+      "description": "表情包选择工具，支持 embedding 语义向量匹配和文本 LLM 选择",
       "author": {
         "name": "hsd221",
         "url": "https://github.com/hsd221"
@@ -8679,7 +8679,7 @@
     "id": "exynos967.telegram-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.0",
+      "version": "1.0.1",
       "name": "Telegram_Adapter",
       "description": "Telegram Bot API adapter plugin for MaiBot",
       "author": {
