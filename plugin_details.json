@@ -2919,7 +2919,7 @@
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.3",
+      "version": "2.2.4",
       "name": "群聊静音插件 | GroupMuter Plugin",
       "description": "一个允许管理员通过聊天命令，让麦麦在指定群聊中临时进入“静音状态”（闭嘴）的群组管理插件。",
       "author": {
@@ -2957,7 +2957,7 @@
       "display": {
         "icon": {
           "type": "local",
-          "value": "./mute.webp"
+          "value": "./icon.webp"
         }
       },
       "id": "TAIY2020.group-muter-plugin"
@@ -6071,7 +6071,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID 列���。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -8556,7 +8556,7 @@
     "id": "TAIY2020.smart_poke_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.6.4",
+      "version": "1.6.6",
       "name": "智能戳一戳插件 | Smart Poke Plugin",
       "description": "一个让麦麦在 QQ 戳一戳里尽量像真人一样反应的拟人化交互插件。",
       "author": {
@@ -8602,7 +8602,7 @@
       "display": {
         "icon": {
           "type": "local",
-          "value": "./poke.webp"
+          "value": "./assets/icon.webp"
         }
       },
       "id": "TAIY2020.smart_poke_plugin"
@@ -9069,7 +9069,7 @@
     "id": "TAIY2020.llm-balance-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.5.4",
+      "version": "1.5.5",
       "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
       "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 的账号余额，支持 HTML 卡片可视化输出，仅依赖 Python 标准库。",
       "author": {
@@ -9108,7 +9108,7 @@
       "display": {
         "icon": {
           "type": "local",
-          "value": "./money.svg"
+          "value": "./icon.svg"
         }
       },
       "id": "TAIY2020.llm-balance-plugin"
