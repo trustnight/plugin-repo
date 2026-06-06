@@ -2720,7 +2720,7 @@
     "id": "TAIY2020.custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.4.5",
+      "version": "2.5.0",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -2761,7 +2761,7 @@
       "display": {
         "icon": {
           "type": "local",
-          "value": "./command.svg"
+          "value": "./assets/icon.svg"
         }
       },
       "id": "TAIY2020.custom-commands-plugin"
@@ -3596,45 +3596,62 @@
   {
     "id": "Shiroha135.GPT-SoVITS-v2-TTS-Plugin",
     "manifest": {
-      "manifest_version": 1,
-      "name": "GPT-SoVITS-V2 TTS插件",
-      "version": "1.8.15",
-      "description": "基于 GPT-SoVITS-V2 的文本转语音插件，支持多语言转换，可以通过关键词，指令启动",
+      "manifest_version": 2,
+      "version": "3.2.0",
+      "name": "GPT-SoVITS V2 TTS",
+      "description": "基于本地 GPT-SoVITS V2 API 的文本转语音插件，支持 /vits 命令和关键词语音触发。",
       "author": {
-        "name": "HatsuYukiAya初雪绫",
-        "url": "https://github.com/Shiroha135"
+        "name": "HatsuyukiAya",
+        "url": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin"
       },
       "license": "MIT",
-      "host_application": {
-        "min_version": "0.9.0",
-        "max_version": "0.11.2"
+      "urls": {
+        "repository": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin",
+        "homepage": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin",
+        "documentation": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin",
+        "issues": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin/issues"
       },
-      "homepage_url": "https://github.com/Shiroha135",
-      "repository_url": "https://github.com/Shiroha135/GPT-SoVITS-v2-TTS-Plugin",
-      "keywords": [
-        "TTS",
-        "语音合成",
-        "GPT-SoVITS-V2",
-        "指令开关",
-        "多语言"
+      "host_application": {
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
+      },
+      "sdk": {
+        "min_version": "2.5.2",
+        "max_version": "2.99.99"
+      },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.12.0"
+        },
+        {
+          "type": "python_package",
+          "name": "aiofiles",
+          "version_spec": ">=23.0.0"
+        }
       ],
-      "categories": [
-        "语音",
-        "聊天增强"
+      "capabilities": [
+        "send.text",
+        "send.custom",
+        "llm.generate"
       ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "action",
-            "name": "tts_voice_action",
-            "description": "将文本内容转换为语音并发送，/vitsmode on启用全局TTS模式"
-          }
+      "i18n": {
+        "default_locale": "zh-CN",
+        "locales_path": null,
+        "supported_locales": [
+          "zh-CN"
         ]
-      }
+      },
+      "plugin_type": "extension",
+      "display": {
+        "icon": {
+          "type": "lucide",
+          "value": "volume-2",
+          "background": "#3B82F6"
+        }
+      },
+      "id": "hatsuyukiaya.gpt-sovits-v2-tts"
     }
   },
   {
@@ -7594,7 +7611,7 @@
           {
             "type": "command",
             "name": "MaiHoYo_help",
-            "description": "显示插件帮助信息"
+            "description": "显示插件帮助信��"
           },
           {
             "type": "action",
@@ -7703,18 +7720,19 @@
     "id": "sengokucola.self-identity-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.0",
+      "version": "1.3.0",
       "name": "自我信息插件 (Self Identity Plugin)",
-      "description": "为 Bot 提供基于人设图片的自我识别与自我信息检索能力",
+      "description": "为 Bot 提供自我信息检索、人设图库浏览、自我图片与 QQ 头像获取能力",
       "author": {
         "name": "SengokuCola",
         "url": "https://github.com/SengokuCola"
       },
       "license": "MIT",
+      "plugin_type": "chat",
       "urls": {
         "repository": "https://github.com/SengokuCola/self_identity_plugin",
         "homepage": "https://github.com/SengokuCola/self_identity_plugin",
-        "documentation": "https://github.com/Mai-with-u/maibot-plugin-sdk/blob/main/docs/guide.md",
+        "documentation": "https://github.com/SengokuCola/self_identity_plugin/blob/main/README.md",
         "issues": "https://github.com/SengokuCola/self_identity_plugin/issues"
       },
       "host_application": {
@@ -7727,10 +7745,18 @@
       },
       "dependencies": [],
       "capabilities": [
+        "config.get",
         "llm.generate",
         "llm.get_available_models",
         "message.get_by_id"
       ],
+      "display": {
+        "icon": {
+          "type": "emoji",
+          "value": "🪞",
+          "background": "#E8F0F7"
+        }
+      },
       "i18n": {
         "default_locale": "zh-CN",
         "locales_path": "_locales",
@@ -7952,7 +7978,7 @@
     "id": "SengokuCola.maimai-niuniu-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.1",
+      "version": "1.4.0",
       "name": "麦麦牛牛插件 (Maimai Niuniu Plugin)",
       "description": "夺舍牛牛，可以进行简单复读和说有趣的话",
       "author": {
@@ -7977,9 +8003,7 @@
       "dependencies": [],
       "capabilities": [
         "chat.get_group_streams",
-        "emoji.get_by_description",
         "message.get_recent",
-        "send.emoji",
         "send.image",
         "send.text"
       ],
