@@ -8581,7 +8581,7 @@
     "id": "TAIY2020.smart_poke_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.6.6",
+      "version": "1.7.3",
       "name": "智能戳一戳插件 | Smart Poke Plugin",
       "description": "一个让麦麦在 QQ 戳一戳里尽量像真人一样反应的拟人化交互插件。",
       "author": {
@@ -8613,8 +8613,11 @@
         "emoji.get_emotions",
         "chat.get_stream_by_group_id",
         "chat.get_stream_by_user_id",
+        "chat.open_session",
         "message.get_recent",
-        "maisaka.context.append"
+        "maisaka.context.append",
+        "llm.generate",
+        "config.get"
       ],
       "i18n": {
         "default_locale": "zh-CN",
