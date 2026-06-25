@@ -1482,7 +1482,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.6",
+      "version": "2.0.7",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -8720,7 +8720,7 @@
     "id": "exynos967.telegram-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.0",
+      "version": "1.2.0",
       "name": "Telegram_Adapter",
       "description": "Telegram Bot API adapter plugin for MaiBot",
       "author": {
@@ -8912,23 +8912,13 @@
       },
       "host_application": {
         "min_version": "1.0.0",
-        "max_version": "1.99.0"
+        "max_version": "1.99.99"
       },
       "sdk": {
         "min_version": "2.0.0",
-        "max_version": "2.99.0"
+        "max_version": "2.99.99"
       },
       "dependencies": [
-        {
-          "type": "python_package",
-          "name": "python-docx",
-          "version_spec": ">=1.1.2"
-        },
-        {
-          "type": "python_package",
-          "name": "pypdf",
-          "version_spec": ">=5.0.0"
-        },
         {
           "type": "python_package",
           "name": "PyYAML",
