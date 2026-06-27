@@ -2870,7 +2870,7 @@
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.4.0",
+      "version": "2.4.1",
       "name": "群聊静音插件 | GroupMuter Plugin",
       "description": "一个允许管理员通过聊天命令、或麦麦主动让指定群聊临时进入“静音状态”（闭嘴）的群组管理插件。",
       "author": {
@@ -6427,7 +6427,7 @@
     "id": "CharTyr.Mai-Soul-Engine",
     "manifest": {
       "manifest_version": 2,
-      "id": "char-tyr.mai-soul-engine",
+      "id": "chartyr.mai-soul-engine",
       "version": "2.0.0",
       "name": "Mai-Soul-Engine",
       "description": "通过聊天塑造 MaiBot 三观的人格底座 — 意识形态光谱演化 + 思维阁内化 + 回复注入",
@@ -8464,7 +8464,7 @@
     "id": "TAIY2020.smart_poke_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.7.6",
+      "version": "1.8.4",
       "name": "智能戳一戳插件 | Smart Poke Plugin",
       "description": "一个让麦麦在 QQ 戳一戳里尽量像真人一样反应的拟人化交互插件。",
       "author": {
@@ -8498,6 +8498,7 @@
         "chat.get_stream_by_user_id",
         "chat.open_session",
         "message.get_recent",
+        "message.build_readable",
         "maisaka.context.append",
         "llm.generate",
         "config.get"
@@ -9000,7 +9001,7 @@
     "id": "TAIY2020.llm-balance-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.6.0",
+      "version": "1.6.2",
       "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
       "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 和阿里云账号余额，支持 HTML 卡片可视化输出，仅依赖 Python 标准库。",
       "author": {
