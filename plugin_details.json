@@ -2875,7 +2875,9 @@
         "send.text",
         "frequency.get_adjust",
         "frequency.set_adjust",
-        "chat.get_group_streams"
+        "chat.get_group_streams",
+        "llm.generate",
+        "message.get_recent"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -8433,7 +8435,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.9.1",
+      "version": "1.9.2",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
