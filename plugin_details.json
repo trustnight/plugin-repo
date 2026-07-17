@@ -5943,7 +5943,7 @@
               "type": "string"
             },
             "default": [],
-            "description": "聊天流 ID 列表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
+            "description": "聊天流 ID ��表。支持格式: 1. 纯数字 (兼容模式); 2. 显式指定: 'group:12345'(群号), 'user:10001'(私聊), 'stream:hash'(流ID)"
           }
         },
         "person_profile": {
@@ -7894,7 +7894,7 @@
     "id": "maibot-team.napcat-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.1",
+      "version": "1.3.2",
       "name": "Napcat_Adapter 适配器",
       "description": "插件版Napcat适配器，提供与Napcat的连接功能。",
       "author": {
@@ -7910,7 +7910,7 @@
       },
       "host_application": {
         "min_version": "1.0.0",
-        "max_version": "1.0.99"
+        "max_version": "1.1.99"
       },
       "sdk": {
         "min_version": "2.0.0",
@@ -7925,7 +7925,8 @@
           "en-US"
         ]
       },
-      "id": "maibot-team.napcat-adapter"
+      "id": "maibot-team.napcat-adapter",
+      "plugin_type": "adapter"
     }
   },
   {
@@ -7973,7 +7974,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "0.8.2",
+      "version": "0.8.3",
       "name": "SnowLuma 连接器（适配器）/ SnowLuma Adapter",
       "description": "连接SnowLuma的Maibot连接器/SnowLuma WebSocket adapter plugin for MaiBot message gateway.",
       "author": {
@@ -7996,7 +7997,7 @@
       },
       "host_application": {
         "min_version": "1.0.6",
-        "max_version": "1.0.99"
+        "max_version": "1.1.99"
       },
       "sdk": {
         "min_version": "2.5.0",
