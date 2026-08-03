@@ -2486,7 +2486,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "namchengwuqiu.gemini_drawer",
-      "version": "1.9.15",
+      "version": "1.9.16",
       "name": "Gemini 绘图",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
@@ -8272,7 +8272,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maibot.deskpet-plugin",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "name": "MaiBot Deskpet",
       "description": "为 MaiBot 接入 Live2D 桌面宠物，支持双向对话（消息管线集成）、表情/动作控制、视线追踪、滚轮缩放和拖拽平移。需配合 deskpet-app Electron 前端使用。",
       "author": {
@@ -8312,6 +8312,11 @@
           "type": "python_package",
           "name": "sherpa-onnx",
           "version_spec": ">=1.10"
+        },
+        {
+          "type": "python_package",
+          "name": "pynput",
+          "version_spec": ">=1.7"
         }
       ],
       "capabilities": [
