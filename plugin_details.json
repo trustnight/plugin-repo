@@ -6017,7 +6017,7 @@
           "reinforce_buffer_max_size": {
             "type": "integer",
             "default": 1000,
-            "description": "强化缓冲区最大大小"
+            "description": "强化��冲区最大大小"
           },
           "reinforce_cooldown_hours": {
             "type": "number",
