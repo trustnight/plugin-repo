@@ -5985,7 +5985,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像时���证据数量上限"
           }
         },
         "memory": {
@@ -7894,7 +7894,7 @@
     "id": "maibot-team.napcat-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.2",
+      "version": "1.3.3",
       "name": "Napcat_Adapter 适配器",
       "description": "插件版Napcat适配器，提供与Napcat的连接功能。",
       "author": {
@@ -7910,7 +7910,7 @@
       },
       "host_application": {
         "min_version": "1.0.0",
-        "max_version": "1.1.99"
+        "max_version": "1.2.99"
       },
       "sdk": {
         "min_version": "2.0.0",
