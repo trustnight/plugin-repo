@@ -3580,7 +3580,7 @@
         "issues": "https://github.com/saberlights/smart_segmentation_plugin/issues"
       },
       "host_application": {
-        "min_version": "1.0.0",
+        "min_version": "1.2.0",
         "max_version": "999999.0.0"
       },
       "sdk": {
@@ -7412,7 +7412,7 @@
           {
             "type": "command",
             "name": "MaiHoYo_help",
-            "description": "显示插件帮助信息"
+            "description": "显示插件帮助信��"
           },
           {
             "type": "action",
@@ -8818,7 +8818,7 @@
     "id": "TAIY2020.llm-balance-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.6.2",
+      "version": "1.6.3",
       "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
       "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 和阿里云账号余额，支持 HTML 卡片可视化输出，仅依赖 Python 标准库。",
       "author": {
