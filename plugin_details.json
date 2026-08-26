@@ -7412,7 +7412,7 @@
           {
             "type": "command",
             "name": "MaiHoYo_help",
-            "description": "显示插件帮助信��"
+            "description": "显示插件帮助信息"
           },
           {
             "type": "action",
