@@ -5999,7 +5999,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像��的证据数量上限"
           }
         },
         "memory": {
@@ -7433,47 +7433,59 @@
   {
     "id": "maibot_music_plugin",
     "manifest": {
-      "manifest_version": 1,
+      "manifest_version": 2,
+      "id": "hydrogen.astrbot-plugin-music",
+      "version": "3.0.0",
       "name": "点歌插件",
-      "version": "2.1.0",
       "description": "轻量化的点歌插件，支持多音源、卡片播放、语音播放、热评、歌词、无需VIP",
       "author": {
         "name": "氢",
         "url": "https://github.com/hydrogen-francium"
       },
       "license": "MIT",
-      "homepage_url": "https://github.com/hydrogen-francium/maibot_music_plugin",
-      "repository_url": "https://github.com/hydrogen-francium/maibot_music_plugin",
-      "keywords": [
-        "音乐",
-        "点歌",
-        "网易云",
-        "QQ音乐"
-      ],
-      "categories": [
-        "娱乐",
-        "音乐"
-      ],
+      "urls": {
+        "repository": "https://github.com/hydrogen-francium/maibot_music_plugin",
+        "homepage": "https://github.com/hydrogen-francium/maibot_music_plugin"
+      },
       "host_application": {
-        "min_version": "0.10.0"
+        "min_version": "1.0.0",
+        "max_version": "1.99.99"
       },
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "command",
-            "name": "music",
-            "description": "点歌命令"
-          },
-          {
-            "type": "command",
-            "name": "lyrics",
-            "description": "查歌词命令"
-          }
-        ]
+      "sdk": {
+        "min_version": "2.8.0",
+        "max_version": "2.99.99"
       },
-      "id": "maibot_music_plugin"
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "aiofiles",
+          "version_spec": ">=23.0.0"
+        },
+        {
+          "type": "python_package",
+          "name": "aiohttp",
+          "version_spec": ">=3.12.0"
+        },
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.27.0"
+        },
+        {
+          "type": "python_package",
+          "name": "Pillow",
+          "version_spec": ">=10.0.0"
+        }
+      ],
+      "plugin_type": "media",
+      "capabilities": [
+        "send.text",
+        "send.image",
+        "api.call"
+      ],
+      "i18n": {
+        "default_locale": "zh-CN"
+      }
     }
   },
   {
