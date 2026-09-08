@@ -6031,7 +6031,7 @@
           "reinforce_buffer_max_size": {
             "type": "integer",
             "default": 1000,
-            "description": "强化缓冲���最大大小"
+            "description": "强化缓冲区最大大小"
           },
           "reinforce_cooldown_hours": {
             "type": "number",
@@ -8360,7 +8360,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.10.7",
+      "version": "1.11.2",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
