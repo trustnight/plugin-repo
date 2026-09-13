@@ -2492,7 +2492,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "namchengwuqiu.gemini_drawer",
-      "version": "1.10.6",
+      "version": "1.11.1",
       "name": "Gemini 绘图",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
@@ -5999,7 +5999,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像时���证据数量上限"
           }
         },
         "memory": {
