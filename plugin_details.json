@@ -6058,7 +6058,7 @@
           "reinforce_buffer_max_size": {
             "type": "integer",
             "default": 1000,
-            "description": "强化缓��区最大大小"
+            "description": "强化缓冲区最大大小"
           },
           "reinforce_cooldown_hours": {
             "type": "number",
@@ -6705,7 +6705,7 @@
     "manifest": {
       "manifest_version": 2,
       "name": "桌游搜索插件 (bgg_search_plugin)",
-      "version": "0.0.7",
+      "version": "0.0.8",
       "description": "利用集石、DDGS 和 LLM 查询桌游英文名，然后从 BGG 网站获取游戏的相关基本信息",
       "author": {
         "name": "山上的小丘",
@@ -6720,17 +6720,34 @@
         "min_version": "1.0.0",
         "max_version": "2.99.99"
       },
+      "dependencies": [
+        {
+          "type": "python_package",
+          "name": "httpx",
+          "version_spec": ">=0.26.0"
+        },
+        {
+          "type": "python_package",
+          "name": "beautifulsoup4",
+          "version_spec": ">=4.12"
+        },
+        {
+          "type": "python_package",
+          "name": "ddgs",
+          "version_spec": ">=0.1.0"
+        }
+      ],
       "capabilities": [
         "llm.generate",
-        "llm.get_available_models",
-        "message.get_by_time_in_chat",
-        "config.get",
         "send.text",
-        "send.image",
-        "send.forward"
+        "send.image"
       ],
+      "plugin_type": "tool",
       "i18n": {
-        "default_locale": "zh-CN"
+        "default_locale": "zh-CN",
+        "supported_locales": [
+          "zh-CN"
+        ]
       },
       "urls": {
         "repository": "https://github.com/fsqhn/maibot-bgg-plugin",
@@ -7960,7 +7977,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.1",
+      "version": "1.0.2",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "QQ适配器，同时支持 SnowLuma 与 NapCat 客户端",
       "author": {
@@ -8391,7 +8408,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
-      "version": "1.12.2",
+      "version": "1.12.3",
       "name": "麦麦绘图",
       "description": "让麦麦拥有图片创建与图片编辑的能力，支持多平台图片模型",
       "author": {
