@@ -7977,7 +7977,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.0.2",
+      "version": "1.0.3",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "QQ适配器，同时支持 SnowLuma 与 NapCat 客户端",
       "author": {
@@ -8732,56 +8732,6 @@
         ]
       },
       "id": "CharTyr.MaiBot-Better-Expression"
-    }
-  },
-  {
-    "id": "chartyr.Mai-Skill-Loader",
-    "manifest": {
-      "manifest_version": 2,
-      "version": "1.0.0",
-      "name": "MaiBot Agent Skills 加载器",
-      "description": "加载 Agent Skills 规范的 skill 文件夹，自动注册为 LLM 可调用的 Tool 组件。支持 direct 和 agent 两种执行模式。",
-      "author": {
-        "name": "CharTyr",
-        "url": "https://github.com/CharTyr"
-      },
-      "license": "MIT",
-      "urls": {
-        "repository": "https://github.com/CharTyr/Mai-Skill-Loader",
-        "homepage": "https://github.com/CharTyr/Mai-Skill-Loader"
-      },
-      "host_application": {
-        "min_version": "1.0.0",
-        "max_version": "1.99.99"
-      },
-      "sdk": {
-        "min_version": "2.0.0",
-        "max_version": "2.99.99"
-      },
-      "dependencies": [
-        {
-          "type": "python_package",
-          "name": "PyYAML",
-          "version_spec": ">=6.0.0"
-        }
-      ],
-      "capabilities": [
-        "send.text",
-        "llm.generate",
-        "llm.generate_with_tools",
-        "llm.get_available_models",
-        "config.get",
-        "message.get_recent",
-        "message.build_readable"
-      ],
-      "i18n": {
-        "default_locale": "zh-CN",
-        "locales_path": "_locales",
-        "supported_locales": [
-          "zh-CN"
-        ]
-      },
-      "id": "chartyr.skill-loader"
     }
   },
   {
