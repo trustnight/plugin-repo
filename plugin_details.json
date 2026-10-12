@@ -2680,7 +2680,7 @@
     "id": "TAIY2020.group_muter_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.6.1",
+      "version": "2.6.2",
       "name": "群聊静音插件 | GroupMuter Plugin",
       "description": "一个允许管理员通过聊天命令、或麦麦主动让指定群聊临时进入“静音状态”（闭嘴）的群组管理插件。",
       "author": {
@@ -7805,7 +7805,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.4",
+      "version": "1.1.5",
       "name": "SnowLuma 适配器/ SnowLuma Adapter",
       "description": "QQ适配器，同时支持 SnowLuma 与 NapCat 客户端",
       "author": {
@@ -8068,7 +8068,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "maibot.deskpet-plugin",
-      "version": "0.6.0",
+      "version": "0.6.3",
       "name": "MaiBot Deskpet",
       "description": "为 MaiBot 接入 Live2D 桌面宠物，支持双向对话（消息管线集成）、表情/动作控制、视线追踪、滚轮缩放和拖拽平移。需配合 deskpet-app Electron 前端使用。",
       "author": {
