@@ -7134,7 +7134,8 @@
     "id": "XXXxx7258.moegirl_wiki_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.0.0",
+      "version": "2.1.2",
+      "plugin_type": "tool",
       "name": "萌娘百科插件",
       "description": "为麦麦提供萌娘百科知识补充：词条摘要、主词条信息及相关语境，支持 generator=search 与 opensearch 双路径回退。",
       "author": {
@@ -7150,7 +7151,7 @@
       },
       "host_application": {
         "min_version": "1.0.0",
-        "max_version": "1.99.99"
+        "max_version": "1.3.99"
       },
       "sdk": {
         "min_version": "2.0.0",
@@ -7163,9 +7164,7 @@
           "version_spec": ">=3.8.0"
         }
       ],
-      "capabilities": [
-        "llm.tool"
-      ],
+      "capabilities": [],
       "i18n": {
         "default_locale": "zh-CN",
         "supported_locales": [
@@ -7611,7 +7610,7 @@
     "id": "SengokuCola.maimai-birdwatching-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.2.3",
+      "version": "1.2.4",
       "name": "麦麦观鸟插件 (MaiMai Birdwatching Plugin)",
       "description": "提供基于百度智能云图像识别接口的鸟类、动物、植物、菜品识别工具，以及鸟类百科知识查询工具。",
       "author": {
@@ -8133,7 +8132,7 @@
     "id": "sengokucola.better-image",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.5",
+      "version": "1.1.6",
       "name": "Better Image",
       "description": "提供互联网搜图、历史消息图片提取、裁切和放大工具。",
       "author": {
