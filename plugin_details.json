@@ -2370,7 +2370,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "namchengwuqiu.gemini_drawer",
-      "version": "1.15.11",
+      "version": "1.15.12",
       "name": "Gemini 绘图",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
@@ -2386,7 +2386,7 @@
       },
       "host_application": {
         "min_version": "1.3.0",
-        "max_version": "1.3.19"
+        "max_version": "1.4.3"
       },
       "sdk": {
         "min_version": "2.5.2",
@@ -2434,7 +2434,7 @@
           "background": "#071b3d"
         }
       },
-      "plugin_type": "extension"
+      "plugin_type": "creative"
     }
   },
   {
@@ -5520,7 +5520,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像时的��据数量上限"
           }
         },
         "memory": {
@@ -7860,7 +7860,7 @@
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
       "plugin_type": "creative",
-      "version": "2.1.5",
+      "version": "2.1.6",
       "name": "麦麦绘图",
       "description": "让麦麦拥有绘图能力，提供LLM工具、命令调用、在线WebUI，支持多平台多实例、文生图与图生图、模型与风格管理、任务追踪及插件联动",
       "author": {
@@ -7880,7 +7880,7 @@
       },
       "sdk": {
         "min_version": "2.12.0",
-        "max_version": "2.21.0"
+        "max_version": "2.22.1"
       },
       "dependencies": [
         {
