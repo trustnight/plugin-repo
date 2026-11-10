@@ -2370,7 +2370,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "namchengwuqiu.gemini_drawer",
-      "version": "1.15.12",
+      "version": "1.15.13",
       "name": "Gemini 绘图",
       "description": "使用 Google Gemini API或着其他第三方平台提供的绘图服务，根据图片和提示词生成新图片。（现已支持视频生成）",
       "author": {
@@ -5520,7 +5520,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的��据数量上限"
+            "description": "构建画像时的证据数量上限"
           }
         },
         "memory": {
@@ -6195,62 +6195,6 @@
     }
   },
   {
-    "id": "fsqhn.bgg_search_plugin",
-    "manifest": {
-      "manifest_version": 2,
-      "name": "桌游搜索插件 (bgg_search_plugin)",
-      "version": "0.0.8",
-      "description": "利用集石、DDGS 和 LLM 查询桌游英文名，然后从 BGG 网站获取游戏的相关基本信息",
-      "author": {
-        "name": "山上的小丘",
-        "url": "https://github.com/fsqhn"
-      },
-      "license": "GPL-v3.0-or-later",
-      "host_application": {
-        "min_version": "1.0.0",
-        "max_version": "1.99.99"
-      },
-      "sdk": {
-        "min_version": "1.0.0",
-        "max_version": "2.99.99"
-      },
-      "dependencies": [
-        {
-          "type": "python_package",
-          "name": "httpx",
-          "version_spec": ">=0.26.0"
-        },
-        {
-          "type": "python_package",
-          "name": "beautifulsoup4",
-          "version_spec": ">=4.12"
-        },
-        {
-          "type": "python_package",
-          "name": "ddgs",
-          "version_spec": ">=0.1.0"
-        }
-      ],
-      "capabilities": [
-        "llm.generate",
-        "send.text",
-        "send.image"
-      ],
-      "plugin_type": "tool",
-      "i18n": {
-        "default_locale": "zh-CN",
-        "supported_locales": [
-          "zh-CN"
-        ]
-      },
-      "urls": {
-        "repository": "https://github.com/fsqhn/maibot-bgg-plugin",
-        "homepage": "https://github.com/fsqhn/maibot-bgg-plugin"
-      },
-      "id": "fsqhn.bgg_search_plugin"
-    }
-  },
-  {
     "id": "HyperSharkawa.maibot-character-sketch-plugin",
     "manifest": {
       "manifest_version": 1,
@@ -6725,7 +6669,7 @@
     "id": "XXXxx7258.moegirl_wiki_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.1.2",
+      "version": "2.1.3",
       "plugin_type": "tool",
       "name": "萌娘百科插件",
       "description": "为麦麦提供萌娘百科知识补充：词条摘要、主词条信息及相关语境，支持 generator=search 与 opensearch 双路径回退。",
@@ -6742,7 +6686,7 @@
       },
       "host_application": {
         "min_version": "1.0.0",
-        "max_version": "1.3.99"
+        "max_version": "1.4.99"
       },
       "sdk": {
         "min_version": "2.0.0",
@@ -7395,9 +7339,9 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.1.13",
-      "name": "SnowLuma 适配器/ SnowLuma Adapter",
-      "description": "QQ适配器，同时支持 SnowLuma 与 NapCat 客户端",
+      "version": "1.3.1",
+      "name": "OneBot 适配器",
+      "description": "QQ OneBot v11 适配器，支持通用标准模式和特殊适配",
       "author": {
         "name": "MaiBot Team",
         "url": "https://github.com/Mai-with-u/MaiBot-SnowLuma-Adapter"
@@ -7413,12 +7357,12 @@
       "display": {
         "icon": {
           "type": "local",
-          "value": "assets/icon.jpg"
+          "value": "assets/icon-v2.png"
         }
       },
       "host_application": {
-        "min_version": "1.3.18",
-        "max_version": "1.3.99"
+        "min_version": "1.4.4",
+        "max_version": "1.4.99"
       },
       "sdk": {
         "min_version": "2.19.0",
@@ -7432,6 +7376,7 @@
         }
       ],
       "capabilities": [
+        "runtime.set_status_badges",
         "chat.get_all_streams",
         "chat.open_session",
         "component.disable",
@@ -7860,7 +7805,7 @@
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
       "plugin_type": "creative",
-      "version": "2.1.6",
+      "version": "2.1.7",
       "name": "麦麦绘图",
       "description": "让麦麦拥有绘图能力，提供LLM工具、命令调用、在线WebUI，支持多平台多实例、文生图与图生图、模型与风格管理、任务追踪及插件联动",
       "author": {
@@ -8291,9 +8236,9 @@
     "id": "TAIY2020.llm-balance-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.6.4",
+      "version": "1.7.0",
       "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
-      "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 和阿里云账号余额，支持 HTML 卡片可视化输出，仅依赖 Python 标准库。",
+      "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 和阿里云账号余额，支持 HTML 卡片可视化输出和配置页一键查询，仅依赖 Python 标准库。",
       "author": {
         "name": "TaiYang",
         "url": "https://github.com/TAIY2020"
@@ -8306,22 +8251,22 @@
         "issues": "https://github.com/TAIY2020/llm_balance_plugin/issues"
       },
       "host_application": {
-        "min_version": "1.0.0",
-        "max_version": "1.99.99"
+        "min_version": "1.3.17",
+        "max_version": "1.4.99"
       },
       "sdk": {
-        "min_version": "2.5.3",
+        "min_version": "2.19.0",
         "max_version": "2.99.99"
       },
       "dependencies": [],
       "capabilities": [
         "send.text",
         "send.image",
-        "render.html2png"
+        "render.html2png",
+        "config.get"
       ],
       "i18n": {
         "default_locale": "zh-CN",
-        "locales_path": "_locales",
         "supported_locales": [
           "zh-CN"
         ]
