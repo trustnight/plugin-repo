@@ -5520,7 +5520,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时��证据数量上限"
+            "description": "构建画像时的��据数量上限"
           }
         },
         "memory": {
@@ -7537,7 +7537,7 @@
       "manifest_version": 2,
       "id": "CSSQY.RunTime_Tracker_Plugin",
       "name": "Run Time Tracker Plugin",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "description": "一个对接时间跟踪应用程序的插件，用于麦麦监控您的设备使用时间。",
       "author": {
         "name": "CSSQY",
@@ -7550,7 +7550,7 @@
       "changelog": "CHANGELOG.md",
       "host_application": {
         "min_version": "1.3.0",
-        "max_version": "1.3.99"
+        "max_version": "1.4.99"
       },
       "sdk": {
         "min_version": "2.9.0",
@@ -7805,7 +7805,7 @@
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
       "plugin_type": "creative",
-      "version": "2.2.1",
+      "version": "2.3.0",
       "name": "麦麦绘图",
       "description": "让麦麦拥有绘图能力，提供LLM工具、命令调用、在线WebUI，支持多平台多实例、文生图与图生图、模型与风格管理、任务追踪及插件联动",
       "author": {
@@ -7825,7 +7825,7 @@
       },
       "sdk": {
         "min_version": "2.20.0",
-        "max_version": "2.22.1"
+        "max_version": "2.23.0"
       },
       "dependencies": [
         {
