@@ -1586,19 +1586,19 @@
     "id": "XXXxx7258.google_search_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.1.1",
+      "version": "4.2.1",
       "name": "麦麦联网插件（search plugin）",
       "description": "支持多个搜索引擎的网络搜索、缩写翻译以及图片搜索，并提供自动降级能力。",
       "author": {
         "name": "晴空",
-        "url": "https://github.com/XXXxx7258"
+        "url": "https://github.com/YukiSakiko"
       },
       "license": "AGPL",
       "urls": {
-        "repository": "https://github.com/XXXxx7258/google_search_plugin",
-        "homepage": "https://github.com/XXXxx7258/google_search_plugin",
-        "documentation": "https://github.com/XXXxx7258/google_search_plugin#readme",
-        "issues": "https://github.com/XXXxx7258/google_search_plugin/issues"
+        "repository": "https://github.com/YukiSakiko/google_search_plugin",
+        "homepage": "https://github.com/YukiSakiko/google_search_plugin",
+        "documentation": "https://github.com/YukiSakiko/google_search_plugin#readme",
+        "issues": "https://github.com/YukiSakiko/google_search_plugin/issues"
       },
       "host_application": {
         "min_version": "0.10.0",
@@ -1612,7 +1612,12 @@
         {
           "type": "python_package",
           "name": "aiohttp",
-          "version_spec": ">=3.8.0"
+          "version_spec": ">=3.9.0"
+        },
+        {
+          "type": "python_package",
+          "name": "Pillow",
+          "version_spec": ">=10.0.0"
         },
         {
           "type": "python_package",
@@ -1677,7 +1682,8 @@
         "send.image",
         "send.forward",
         "component.enable",
-        "component.disable"
+        "component.disable",
+        "maisaka.context.resolve_image"
       ],
       "i18n": {
         "default_locale": "zh-CN",
@@ -5528,7 +5534,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像时的��据数量上限"
           }
         },
         "memory": {
@@ -7347,7 +7353,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.1",
+      "version": "1.3.2",
       "name": "OneBot 适配器",
       "description": "QQ OneBot v11 适配器，支持通用标准模式和特殊适配",
       "author": {
@@ -7813,7 +7819,7 @@
       "manifest_version": 2,
       "id": "maimai-drawpic-plugin",
       "plugin_type": "creative",
-      "version": "2.3.4",
+      "version": "2.3.5",
       "name": "麦麦绘图",
       "description": "让麦麦拥有绘图能力，提供LLM工具、命令调用、在线WebUI，支持多平台多实例、文生图与图生图、模型与风格管理、任务追踪及插件联动",
       "author": {
@@ -8246,9 +8252,9 @@
     "id": "TAIY2020.llm-balance-plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.7.0",
+      "version": "1.8.0",
       "name": "LLM 平台余额查询插件 | LLM Balance Plugin",
-      "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow 和阿里云账号余额，支持 HTML 卡片可视化输出和配置页一键查询，仅依赖 Python 标准库。",
+      "description": "通过聊天命令 /余额 并行查询 DeepSeek、SiliconFlow、阿里云和最多 3 个自定义源（New API / One API、DeepSeek 风格、JSON 字段映射）余额，支持 HTML 卡片可视化输出和配置页一键查询，仅依赖 Python 标准库。",
       "author": {
         "name": "TaiYang",
         "url": "https://github.com/TAIY2020"
