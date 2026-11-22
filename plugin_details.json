@@ -5534,7 +5534,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的��据数量上限"
+            "description": "构建画像时的证据数量上限"
           }
         },
         "memory": {
@@ -7353,7 +7353,7 @@
     "id": "maibot-team.snowluma-adapter",
     "manifest": {
       "manifest_version": 2,
-      "version": "1.3.2",
+      "version": "1.3.3",
       "name": "OneBot 适配器",
       "description": "QQ OneBot v11 适配器，支持通用标准模式和特殊适配",
       "author": {
@@ -7395,7 +7395,8 @@
         "chat.open_session",
         "component.disable",
         "component.enable",
-        "message.get_by_id"
+        "message.get_by_id",
+        "send.forward"
       ],
       "i18n": {
         "default_locale": "zh-CN",
