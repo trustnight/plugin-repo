@@ -5534,7 +5534,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像时的证据数量上限"
+            "description": "构建画像��的证据数量上限"
           }
         },
         "memory": {
