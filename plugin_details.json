@@ -1586,7 +1586,7 @@
     "id": "XXXxx7258.google_search_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "4.2.2",
+      "version": "4.2.4",
       "name": "麦麦联网插件（search plugin）",
       "description": "支持多个搜索引擎的网络搜索、缩写翻译以及图片搜索，并提供自动降级能力。",
       "author": {
@@ -5534,7 +5534,7 @@
           "top_k_evidence": {
             "type": "integer",
             "default": 12,
-            "description": "构建画像��的证据数量上限"
+            "description": "构建画像时的证据数量上限"
           }
         },
         "memory": {
